@@ -2,68 +2,18 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Knockin' on Heaven's Door</title>
-
-  <!-- ChordPro JS -->
+  <title>ChordPro test</title>
   <script src="https://cdn.jsdelivr.net/npm/chordpro-js@3/dist/chordpro.min.js"></script>
-
-  <!-- Required CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chordpro-js@3/dist/chordpro.css">
-
-  <style>
-    body {
-      font-family: sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    button {
-      margin-right: 10px;
-    }
-  </style>
 </head>
 <body>
 
-<a href="../index.html">← Back to song list</a>
-
-<h1>Knockin' on Heaven's Door</h1>
-
-<button onclick="transpose(1)">+ Transpose</button>
-<button onclick="transpose(-1)">- Transpose</button>
-
-<div id="song"></div>
+<div id="out"></div>
 
 <script>
-const songText = `
-{title: Knockin' on Heaven's Door}
-{artist: Bob Dylan}
-{key: G}
-
-[G]Mama take this [D]badge from [Am]me
-[G]I can't use it any[D]more
-
-[G]It's gettin' dark, too [D]dark to [Am]see
-[G]Feels like I'm knockin' on heaven's [D]door
-`;
-
-let transposeSteps = 0;
-
-// ✅ CORRECT API
-const parser = new chordpro.ChordProParser();
-const formatter = new chordpro.HtmlDivFormatter();
-
-function render() {
-  const song = parser.parse(songText);
-  song.transpose(transposeSteps);
-  document.getElementById("song").innerHTML = formatter.format(song);
-}
-
-function transpose(n) {
-  transposeSteps += n;
-  render();
-}
-
-render();
+document.getElementById("out").innerText =
+  typeof chordpro === "undefined"
+    ? "ChordPro NOT loaded"
+    : "ChordPro LOADED";
 </script>
 
 </body>
