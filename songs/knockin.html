@@ -7,7 +7,7 @@
   <!-- ChordPro JS -->
   <script src="https://cdn.jsdelivr.net/npm/chordpro-js@3/dist/chordpro.min.js"></script>
 
-  <!-- ✅ REQUIRED CSS -->
+  <!-- Required CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chordpro-js@3/dist/chordpro.css">
 
   <style>
@@ -34,11 +34,10 @@
 <div id="song"></div>
 
 <script>
-let songText = `
+const songText = `
 {title: Knockin' on Heaven's Door}
 {artist: Bob Dylan}
 {key: G}
-{topic: Folk}
 
 [G]Mama take this [D]badge from [Am]me
 [G]I can't use it any[D]more
@@ -49,8 +48,9 @@ let songText = `
 
 let transposeSteps = 0;
 
-const parser = new chordpro.Parser();
-const formatter = new chordpro.HtmlFormatter();
+// ✅ CORRECT API
+const parser = new chordpro.ChordProParser();
+const formatter = new chordpro.HtmlDivFormatter();
 
 function render() {
   const song = parser.parse(songText);
