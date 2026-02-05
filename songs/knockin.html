@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Knockin' on Heaven's Door</title>
+  <script src="https://cdn.jsdelivr.net/npm/chordpro-js@3/dist/chordpro.min.js"></script>
+</head>
+<body>
+
+<a href="../index.html">← Back to song list</a>
+
+<h1>Knockin' on Heaven's Door</h1>
+
+<button onclick="transpose(1)">+ Transpose</button>
+<button onclick="transpose(-1)">- Transpose</button>
+
+<div id="song"></div>
+
+<script>
+let songText = `
+{title: Knockin' on Heaven's Door}
+{artist: Bob Dylan}
+{key: G}
+{topic: Folk}
+
+[G]Mama take this [D]badge from [Am]me
+[G]I can't use it any[D]more
+`;
+
+let t = 0;
+const parser = new chordpro.Parser();
+const formatter = new chordpro.HtmlFormatter();
+
+function render() {
+  const song = parser.parse(songText);
+  song.transpose(t);
+  document.getElementById("song").innerHTML = formatter.format(song);
+}
+
+function transpose(n) {
+  t += n;
+  render();
+}
+
+render();
+</script>
+
+</body>
+</html>
