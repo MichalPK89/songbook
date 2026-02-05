@@ -3,7 +3,24 @@
 <head>
   <meta charset="utf-8">
   <title>Knockin' on Heaven's Door</title>
+
+  <!-- ChordPro JS -->
   <script src="https://cdn.jsdelivr.net/npm/chordpro-js@3/dist/chordpro.min.js"></script>
+
+  <!-- ✅ REQUIRED CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chordpro-js@3/dist/chordpro.css">
+
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    button {
+      margin-right: 10px;
+    }
+  </style>
 </head>
 <body>
 
@@ -25,20 +42,24 @@ let songText = `
 
 [G]Mama take this [D]badge from [Am]me
 [G]I can't use it any[D]more
+
+[G]It's gettin' dark, too [D]dark to [Am]see
+[G]Feels like I'm knockin' on heaven's [D]door
 `;
 
-let t = 0;
+let transposeSteps = 0;
+
 const parser = new chordpro.Parser();
 const formatter = new chordpro.HtmlFormatter();
 
 function render() {
   const song = parser.parse(songText);
-  song.transpose(t);
+  song.transpose(transposeSteps);
   document.getElementById("song").innerHTML = formatter.format(song);
 }
 
 function transpose(n) {
-  t += n;
+  transposeSteps += n;
   render();
 }
 
