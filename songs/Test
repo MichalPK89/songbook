@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Knockin' on Heaven's Door</title>
+
+  <script src="https://unpkg.com/chordpro-js@2.0.3/dist/chordpro.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/chordpro-js@2.0.3/dist/chordpro.css">
+
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    button {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Knockin' on Heaven's Door</h1>
+
+<button onclick="transpose(1)">+ Transpose</button>
+<button onclick="transpose(-1)">- Transpose</button>
+
+<pre id="song"></pre>
+
+<script>
+const songText = `{title: Chordify}
+{artist: Michal Miškovič}
+{key: D}
+
+[G]Mama take this [D]badge from [Am]me
+[G]I can't use it any[D]more
+
+[G]It's gettin' dark, too [D]dark to [Am]see
+[G]Feels like I'm knockin' on heaven's [D]door
+`;
+
+
+function chordify(text) {
+    
+    text_lines = text.split("\n");
+    let results = [];
+    let line_num = 0;
+    
+    for (line of text_lines){
+        let chord_name = '';
+        let index = 1;
+        let chords = [];
+        let chord = {}
+        let text = '';
+        line_num ++;
+        
+        if (line.includes("[")){
+           
+            for (character of line){
+                
+             // ak sa nájde začiatok akordu
+                if (character=="["){
+                    active_chord = 1;
+                    chord_pos = index;
+                    
+                } else if (character=="]" && active_chord==1){
+                    active_chord=0;
+                    chord.pos = chord_pos;
+                    chord.name = chord_name;
+                 
+                    chords.push({name: chord.name, pos: chord.pos});
+                    
+                    chord_name = '';
+                    
+                } else if (active_chord==0){
+                    index++;
+                    text = text + character;
+                } else if (active_chord == 1 && character!="["){
+                    chord_name = chord_name + character;
+                } 
+            } 
+            results.push({line_num, chords, text});  
+        } else {
+            results.push({line_num, line});
+        }
+    } 
+    
+    return results;
+}
+
+
+function results_to_text(results) {
+    let text = ``
+    for (let index = 0; index < results.length; index++){
+        const element = results[index];
+        if (element && Array.isArray(element.chords) && element.chords.length >0) {
+            let line = element.chords[element.chords.length-1].pos;
+            let j = 0;
+            for (i=1; i < line + 1; i++){
+                if (i === element.chords[j].pos){
+                    text += element.chords[j].name;
+                    i = i + element.chords[j].name.length - 1;
+                    
+                    j++;
+                } else {
+                    text += ' '
+                }
+            }
+        }
+        text += '\n';
+        text += element.text;
+        text += '\n';
+    }
+    return text;
+}
+
+console.log(results_to_text(chordify(songText)));
+
+
+
+
+</script>
+
+</body>
+</html>
