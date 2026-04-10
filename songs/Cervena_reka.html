@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Červená řeka</title>
+
+  <style>
+body {
+  font-family: monospace;
+  
+}
+
+.line {
+  position: relative;
+  font-family: monospace;
+}
+
+.line.has-chords {
+  margin-top: 1.2em;
+  margin-bottom: 0.2em;
+}
+
+.line.no-chords {
+  margin-bottom: 0.2em;
+}
+
+.chords {
+  position: absolute;
+  top: -1em;
+}
+
+.chord {
+  position: absolute;
+  font-weight: bold;
+  color:#C000C0;
+}
+
+.lyrics {
+  position: relative;
+  <!--white-space: pre;-->
+}
+
+#name {
+  display: block;
+  font-size: 1.3em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.author {
+  display: block;
+  font-size: 0.8em;
+}
+
+
+
+  </style>
+
+
+
+</head>
+<body>
+
+<div id = "name">Červená řeka</div>
+<div id = "music" class = "author">tradicionál</div>
+<div id = "lyrics" class = "author">Ivo Fischer</div>
+
+<br>
+
+<div id="song"></div>
+
+	
+
+<script>
+
+
+const song =
+`1. Pod tou [D]ská[F#]lou kde [Hm]proud [D7]řeky [G]syčí [D]
+tam kde [D]ční [D7]červe[H7]ný kame[E]ní [A7]
+žije [D]ten [F#]co mi [Hm]jen [D7]srdce	[G]ničí
+toho [D]já [Hm]ráda	[E7]mám [A7]k zblázne[D]ní [G]  [D]
+
+2. Vím že lásku jak trám lehce slíbí,
+já ho znám srdce má děravý,
+ale já chci ho mít mně se líbí
+bez něj žít už mě dál nebaví
+
+3. Často k nám jezdívá s kytkou růží,
+nejhezčí z kovbojů v okolí
+vestu má ušitou z hadích kůží
+bitej pás na něm pár pistolí
+
+4. Hned se ptá jak se mám jak se daří
+kdy mu prý už to svý srdce dám 
+Na to já odpovím že čas maří
+srdce blíž červený řeky mám
+
+5. Když je tma a jdu spát, noc je černá
+hlavu mám bolavou závratí
+Ale já přesto dál budu věrná,
+dokud sám se zas k nám nevrátí.
+`
+
+function parseLine(line) {
+
+    let chords = []
+    let text = ""
+    let textPos = 0
+
+    for (let i = 0; i < line.length; i++) {
+
+        if (line[i] === "[") {
+
+            let end = line.indexOf("]", i)
+            let chordText = line.slice(i + 1, end)
+
+			// split multiple chords like [A B]
+			let chordNames = chordText.split(" ")
+
+			for (let name of chordNames) {
+				if (name.trim() !== "") {
+					chords.push({
+						name: name.trim(),
+						pos: textPos
+					})
+				}
+			}
+
+            i = end
+        } else {
+
+            text += line[i]
+            textPos++
+        }
+    }
+
+    return {
+        text: text,
+        chords: chords
+    }
+}
+
+
+function renderLine(row) {
+
+	row.chords = row.chords || []
+	row.chords = row.chords.filter(c => c.name && c.name.trim() !== "")
+	
+	const hasChords = row.chords.length > 0
+	const isChordOnly = row.text.trim() === ""
+		
+    let chordsHTML = "";
+
+    for (let chord of row.chords) {
+		
+		
+        chordsHTML += `
+        <span class="chord" style="left:${chord.pos}ch">
+            ${chord.name}
+        </span>
+        `
+    }
+
+    return `
+    <div class="line ${hasChords ? "has-chords" : "no-chords"} ${isChordOnly ? "chord-only" : ""}">
+
+        ${hasChords ? `
+        <div class="chords">
+            ${chordsHTML}
+        </div>
+        ` : ""}
+
+        <div class="lyrics">
+            ${row.text}
+        </div>
+
+    </div>
+    `
+}
+
+function renderSong(song) {
+
+    let lines = song.split("\n")
+    let html = ""
+
+    for (let line of lines) {
+	
+		if (line.trim() == ""){
+			html += `<div class="line no-chords"><div class="lyrics">&nbsp;</div></div>`
+			continue
+			}
+
+        let parsed = parseLine(line)
+        html += renderLine(parsed)
+
+    }
+
+    document.getElementById("song").innerHTML = html;
+	
+	
+}
+
+<!-- pridaj popis k autorom -->
+
+document.getElementById("music").innerHTML = "hudba: " + document.getElementById("music").innerHTML;
+document.getElementById("lyrics").innerHTML = "text: " + document.getElementById("lyrics").innerHTML;
+
+<!-- renderuj text a akordy-->
+renderSong(song);
+
+
+
+
+</script>
+
+</body>
+</html>
