@@ -1,0 +1,51 @@
+body {
+  font-family: monospace;
+  
+}
+
+.line {
+  position: relative;
+  font-family: monospace;
+}
+
+.line.has-chords {
+  margin-top: 1.2em;
+  margin-bottom: 0.2em;
+}
+
+.line.no-chords {
+  margin-bottom: 0.2em;
+}
+
+.chords {
+  position: absolute;
+  top: -1em;
+}
+
+.chord {
+  position: absolute;
+  font-weight: bold;
+  color:#C000C0;
+}
+
+.lyrics {
+  position: relative;
+  <!--white-space: pre;-->
+}
+
+#name {
+  display: block;
+  font-size: 1.3em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.author {
+  display: block;
+  font-size: 0.8em;
+}
+
+
