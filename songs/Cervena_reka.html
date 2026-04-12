@@ -5,6 +5,14 @@
   <title>Červená řeka</title>
 
   <link rel="stylesheet" href="https://michalpk89.github.io/songbook/css/style.css">
+
+  <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#transposer").load("https://michalpk89.github.io/songbook/html/transposer"); 
+    });
+    </script> 
+	
 </head>
 
 
@@ -18,10 +26,7 @@
 
 <br>
 
-<button onclick="changeKey(1)">+1</button>
-<button onclick="changeKey(-1)">-1</button>
-<button onclick="changeKey(2)">+2</button>
-<button onclick="changeKey(-2)">-2</button>
+<div id="transposer"></div>
 
 <br><br>
 
