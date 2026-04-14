@@ -1,4 +1,0 @@
-document.write(<button onclick="changeKey(-2)">-2</button>
-  <button onclick="changeKey(-1)">-1</button>
-  <button onclick="changeKey(1)">+1</button>
-  <button onclick="changeKey(2)">+2</button>)
