@@ -1,6 +1,6 @@
  
 
-function parseLine(line) {
+function parseLine(line, withChords = true) {
 
     let chords = []
     let text = ""
@@ -99,8 +99,11 @@ function resetKey() {
     renderSong(song)
 }
 
+let showChords = true;
+
 function toggleChords() {
-    document.getElementById("song").classList.toggle("hide-chords")
+    showChords = !showChords
+    renderSong(song)
 }
 
 
