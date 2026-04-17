@@ -101,7 +101,7 @@ function resetKey() {
 
 function hide() {
     document.getElementByClassName("chords").display = "none";
-	document.getElementByClassName("chord").color = "#A000C0";
+	document.getElementByClassName("chord").color = "blue";
     renderSong(song)
 }
 
