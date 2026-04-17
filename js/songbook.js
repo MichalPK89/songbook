@@ -99,6 +99,11 @@ function resetKey() {
     renderSong(song)
 }
 
+function hide() {
+    document.getElementByClassName("chords").display: = "none";
+    renderSong(song)
+}
+
 
 function renderSong(song) {
 
