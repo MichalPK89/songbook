@@ -4,39 +4,34 @@ function parseLine(line, withChords = true) {
 
     let chords = []
     let text = ""
-    let textPos = 0
+    let pos = 0
 
     for (let i = 0; i < line.length; i++) {
 
         if (line[i] === "[") {
 
             let end = line.indexOf("]", i)
-            let chordText = line.slice(i + 1, end)
+            let raw = line.slice(i + 1, end)
 
-			// split multiple chords like [A B]
-			let chordNames = chordText.split(" ")
+            if (withChords) {
+                let parts = raw.split(" ").filter(x => x)
 
-			for (let name of chordNames) {
-				if (name.trim() !== "") {
-					chords.push({
-						name: name.trim(),
-						pos: textPos
-					})
-				}
-			}
+                for (let p of parts) {
+                    chords.push({
+                        name: p,
+                        pos: pos
+                    })
+                }
+            }
 
             i = end
         } else {
-
             text += line[i]
-            textPos++
+            pos++
         }
     }
 
-    return {
-        text: text,
-        chords: chords
-    }
+    return { text, chords }
 }
 
 
@@ -113,20 +108,13 @@ function renderSong(song) {
     let html = ""
 
     for (let line of lines) {
-	
-		if (line.trim() == ""){
-			html += `<div class="line no-chords"><div class="lyrics">&nbsp;</div></div>`
-			continue
-			}
 
-        let parsed = parseLine(line)
+        let parsed = parseLine(line, showChords)
+
         html += renderLine(parsed)
-
     }
 
-    document.getElementById("song").innerHTML = html;
-	
-	
+    document.getElementById("song").innerHTML = html
 }
 
 <!-- pridaj popis k autorom -->
