@@ -47,9 +47,13 @@ body {
   font-weight: bold;
 }
 
-.about {
+#music, #lyrics {
   display: block;
   font-size: 0.8em;
 }
+
+#style {
+  display: none;
+  }
 
 
