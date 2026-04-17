@@ -28,6 +28,10 @@ body {
   color:#C000C0;
 }
 
+.hide-chords .chords {
+  display: none;
+}
+
 .lyrics {
   position: relative;
   <!--white-space: pre;-->
