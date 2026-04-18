@@ -108,8 +108,10 @@ function renderSettings() {
         <p>
             <button onclick="changeKey(-2)">-2</button>
             <button onclick="changeKey(-1)">-1</button>
+            TRANSPOSE
             <button onclick="changeKey(1)">+1</button>
             <button onclick="changeKey(2)">+2</button>
+            
             &nbsp;
             <button onclick="resetKey()">Reset</button>
             <button onclick="toggleChords()">Akordy</button>
