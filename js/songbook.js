@@ -122,8 +122,8 @@ function renderSettings() {
 
 function changeKey(step) {
     TRANSPOSE += step
-    renderTransposer()
     renderSong(song)
+    renderTransposer()
 }
 
 
