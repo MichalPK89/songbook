@@ -170,6 +170,14 @@ function buildCopyText(song) {
 
 
 
+function copySong() {
+
+    let text = buildCopyText(song)
+
+    navigator.clipboard.writeText(text)
+}
+
+
 function renderSong(song) {
 
     let lines = song.split("\n")
