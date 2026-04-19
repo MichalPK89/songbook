@@ -82,16 +82,16 @@ function renderLine(row) {
     </div>`
 }
 
-
-
 function changeKey(step) {
     TRANSPOSE += step
     renderSong(song)
+    renderTransposer()
 }
 
 function resetKey() {
     TRANSPOSE = 0
     renderSong(song)
+    renderTransposer()
 }
 
 let showChords = true;
@@ -99,6 +99,7 @@ let showChords = true;
 function toggleChords() {
     showChords = !showChords
     renderSong(song)
+    renderTransposer()
 }
 
 
@@ -120,11 +121,7 @@ function renderSettings() {
 }
 
 
-function changeKey(step) {
-    TRANSPOSE += step
-    renderSong(song)
-    renderTransposer()
-}
+
 
 
 function buildCopyText(song) {
