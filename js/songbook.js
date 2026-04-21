@@ -189,10 +189,16 @@ function renderSong(song) {
     document.getElementById("song").innerHTML = html
 }
 
-<!-- pridaj popis k autorom -->
+<!-- pridaj popis -->
 
-document.getElementById("music").innerHTML = "hudba: " + document.getElementById("music").innerHTML;
-document.getElementById("lyrics").innerHTML = "text: " + document.getElementById("lyrics").innerHTML;
+function showSongInfo(key) {
+    const s = songs[key]
+
+    document.getElementById("info").innerHTML = `
+        <h3>${s.title}</h3>
+        <p>${s.author} • ${s.lyrics}</p>
+    `
+}
 
 <!-- pridaj transposer -->
 function loadHTML(id, file) {
