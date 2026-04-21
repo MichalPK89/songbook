@@ -189,7 +189,7 @@ function renderSong(song) {
     document.getElementById("song").innerHTML = html
 }
 
-<!-- pridaj popis -->
+<!-- pridaj info -->
 
 function showSongInfo(key) {
     const s = songs[key]
