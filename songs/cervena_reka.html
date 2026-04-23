@@ -49,8 +49,14 @@ dokud sám se zas k nám nevrátí.
 
 <script src="../js/songbook.js"></script>
 <script>
+
   renderSettings()
-  showSongInfo()
+  function getSongKey() {
+    const params = new URLSearchParams(window.location.search)
+    return params.get("song")
+}
+	
+  initPage()
   renderSong(song)
 </script>
 
