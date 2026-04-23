@@ -1,7 +1,7 @@
 const songs = {
   cervernaReka: {
     title: "Červená řeka",
-    file: "cervernaReka.html",
+    file: "cervena_reka.html",
     author: "tradicionál",
     lyrics: "Ivo Fischer",
     genre: "folk"
