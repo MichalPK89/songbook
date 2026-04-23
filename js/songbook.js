@@ -207,16 +207,20 @@ function renderSong(song) {
 <!-- pridaj info -->
 
 function loadSong(key) {
-    const file = songs[key].file
-    window.location.href = file
+    const s = songs[key]
+    window.location.href = s.file + "?song=" + key
 }
 
-function showSongInfo(key) {
+function initPage() {
+    const key = getSongKey()
+
+    if (!key || !songs[key]) return
+
     const s = songs[key]
 
     document.getElementById("info").innerHTML = `
         <h3>${s.title}</h3>
-        <p>${s.author} • ${s.lyrics}</p>
+        <p>${s.author} • ${s.genre}</p>
     `
 }
 
