@@ -52,11 +52,7 @@ dokud sám se zas k nám nevrátí.
 <script>
 
   renderSettings()
-  function getSongKey() {
-    const params = new URLSearchParams(window.location.search)
-    return params.get("song")
-}
-  document.getElementById("test").innerHTML = getSongKey();
+  document.getElementById("test").innerHTML = location.href.split("/").slice(-1);
   initPage()
   renderSong(song)
 </script>
