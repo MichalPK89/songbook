@@ -55,7 +55,12 @@ dokud sám se zas k nám nevrátí.
   function getFileName() {
     let path = window.location.pathname
     let file = path.split("/").pop()
-    return file
+	if (file.substring(file.length - 5) == ".html"){
+		file = file;
+    } else {
+		file = file + ".html"
+	}
+	  return file
   }
   
   document.getElementById("test").innerHTML = getFileName();
