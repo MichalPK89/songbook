@@ -52,12 +52,15 @@ dokud sám se zas k nám nevrátí.
 <script>
 
   renderSettings()
-  let path = location.href.split("/").slice(-1);
-  if (key.substring(key.length - 5,5) = ".html") 
-    {path}
-  else
-    {path + ".html"}
-  document.getElementById("test").innerHTML = key;
+  function getFileName() {
+	let path = "test.html";
+	if (path.substring(path.length - 5) == ".html") 
+		{key = path}
+	else
+		{key = path + ".html"}
+	return key;
+  }
+  document.getElementById("test").innerHTML = getFileName();
   initPage()
   renderSong(song)
 </script>
