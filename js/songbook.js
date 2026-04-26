@@ -200,7 +200,7 @@ function getFileName() {
 	  return file
   }
 
-console.log(songs);
+
 
 function initPage() {
     
