@@ -200,7 +200,6 @@ function getFileName() {
 	  return file
   }
 
-import { songs } from 'list.js'
 
 function initPage() {
     
