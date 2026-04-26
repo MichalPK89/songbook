@@ -1,20 +1,3 @@
-const songs = {
-  cervena_reka: {
-    title: "Červená řeka",
-    file: "cervena_reka.html",
-    author: "tradicionál",
-    lyrics: "Ivo Fischer",
-    genre: "folk"
-  },
-
-  Other_song: {
-    title: "Name",
-    author: "autor",
-    genre: "rock",
-    file: "Other_song.html"
-  }
-} 
-
 function parseLine(line, withChords = true) {
 
     let chords = []
@@ -216,6 +199,8 @@ function getFileName() {
 	}
 	  return file
   }
+
+import { songs } from 'list.js'
 
 function initPage() {
     
