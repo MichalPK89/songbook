@@ -227,11 +227,7 @@ function loadHTML(id, file) {
 <!-- renderuj text a akordy-->
 renderSong(song);
 
-<!-- vytvor zoznam piesní 
-function createSongList {
-	document.getElementById("list").innerHTML = "test1"
-}
--->
+
 
 
 
