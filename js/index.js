@@ -1,4 +1,4 @@
-function createSongList() {
+function createSongList(params) {
   let list = "";
   var x = document.createElement("TABLE");
   x.setAttribute("id", "index");
@@ -45,20 +45,13 @@ function createSongList() {
 		cell.appendChild(a);
 		row.appendChild(cell);
 		
-		var cell = document.createElement("TD");
-		var text = document.createTextNode(songs[song].performer);
-		cell.appendChild(text);
-		row.appendChild(cell);
+		for (i=0; i<params.length; i++) {
 		
 		var cell = document.createElement("TD");
-		var text = document.createTextNode(songs[song].music);
+		var text = document.createTextNode(songs[song][params[i]]);
 		cell.appendChild(text);
 		row.appendChild(cell);
-		
-		var cell = document.createElement("TD");
-		var text = document.createTextNode(songs[song].genre);
-		cell.appendChild(text);
-		row.appendChild(cell);
+		}		
 		
 		x.appendChild(row);
       }
