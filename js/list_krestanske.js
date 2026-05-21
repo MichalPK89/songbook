@@ -11,7 +11,7 @@ const songs = {
     lyrics: "Ľudmila Koščová (SK)",
     genre: "",
     usage: ["prijímanie"],
-    theme: [""],
+    topic: [""],
     video: "https://www.youtube.com/watch?v=505CrV4U664"
   },
 
@@ -22,7 +22,7 @@ const songs = {
     lyrics: "Richard Čanaky (SK)",
     genre: "",
     usage: ["obetovanie"],
-    theme: [""],
+    topic: [""],
     video: "https://www.youtube.com/watch?v=Hv2PT-n6W60"
   },
 
@@ -33,7 +33,7 @@ const songs = {
     lyrics: "Simona Strmeňová, Marián Púčik",
     genre: "",
     usage: ["prijímanie"],
-    theme: [""],
+    topic: [""],
     video: "https://www.youtube.com/watch?v=sF5sGW7qo-4"
   },
 
@@ -44,7 +44,7 @@ const songs = {
     lyrics: "Lamačské chvály",
     genre: "",
     usage: ["úvod"],
-    theme: ["vďaka"],
+    topic: ["vďaka"],
     video: ""
   },
 
@@ -55,7 +55,7 @@ const songs = {
     lyrics: "M. Čekovský st., E. Čekovská st.",
     genre: "",
     usage: ["záver"],
-    theme: ["Mariánska"],
+    topic: ["Mariánska"],
     video: ""
   }
 
