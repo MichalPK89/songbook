@@ -1,4 +1,4 @@
-function createSongList(params) {
+function createSongList(paramsH, paramsD) {
   let list = "";
   var x = document.createElement("TABLE");
   x.setAttribute("id", "index");
@@ -14,21 +14,15 @@ function createSongList(params) {
   var text = document.createTextNode("Názov");
   cell.appendChild(text);
   row.appendChild(cell);
-  
+
+  for (i=0; i<paramsH.length; i++) {
+	
   var cell = document.createElement("TH");
-  var text = document.createTextNode("Interpret");
+  var text = document.createTextNode([paramsH[i]]);
   cell.appendChild(text);
   row.appendChild(cell);
-  
-  var cell = document.createElement("TH");
-  var text = document.createTextNode("Hudba");
-  cell.appendChild(text);
-  row.appendChild(cell);
-  
-  var cell = document.createElement("TH");
-  var text = document.createTextNode("žáner");
-  cell.appendChild(text);
-  row.appendChild(cell);
+
+  }
   
   x.appendChild(row);
   
@@ -45,10 +39,10 @@ function createSongList(params) {
 		cell.appendChild(a);
 		row.appendChild(cell);
 		
-		for (i=0; i<params.length; i++) {
+		for (i=0; i<paramsD.length; i++) {
 		
 		var cell = document.createElement("TD");
-		var text = document.createTextNode(songs[song][params[i]]);
+		var text = document.createTextNode(songs[song][paramsD[i]]);
 		cell.appendChild(text);
 		row.appendChild(cell);
 		}		
