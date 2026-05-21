@@ -8,7 +8,7 @@ const songs = {
     title: "Dotkni sa (mojich očí)",
     performer: "",
     music: "Franciszka Godlewska",
-    lyrics: "",
+    lyrics: "Ľudmila Koščová (SK)",
     genre: "",
     usage: ["prijímanie"],
     theme: [""],
