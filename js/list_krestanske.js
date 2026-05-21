@@ -19,7 +19,7 @@ const songs = {
     title: "Obeta srdca",
     performer: "Richard Čanaky",
     music: "Matt Redman",
-    lyrics: "",
+    lyrics: "Richard Čanaky (SK)",
     genre: "",
     usage: ["obetovanie"],
     theme: [""],
