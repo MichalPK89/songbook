@@ -24,6 +24,16 @@ const songs = {
     video: "https://www.youtube.com/watch?v=0yD07CFelIs"
   },
 
+  high_hopes: {
+    title: "High Hopes",
+    performer: "Pink Floyd",
+    music: "David Gilmour",
+    lyrics: "David Gilmour & Polly Samson",
+    genre: "rock",
+    language: "en",
+    video: "https://www.youtube.com/watch?v=lgE-FNhHy54"
+  },
+
   ty_jsi_ten_dest: {
     title: "Ty jsi ten déšť (muzikál Johanka z Arku)",
     performer: "Petr Kolář/Kamil Střihavka/Lucie Bílá",
