@@ -57,6 +57,32 @@ function createSongList(paramsH, paramsD) {
 }
 
 function filterTable() {
+	
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("filter");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("index");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+	let all_columns = tr[i].getElementsByTagName("td");
+	for(j=0; j<all_columns.length; j++){
+	if (all_columns[j]){
+		let column_value = all_columns[j].textContent || all_columns[j].innerText;
+        column_value = column_value.toUpperCase();
+        if(column_value.indexOf(filter) > -1){
+            tr[i].style.display = "";
+			break;
+         }else{
+           tr[i].style.display = "none"; 
+		}
+      }
+    }       
+  }
+}
+
+/*
+function filterTable() {
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("filter");
   filter = input.value.toUpperCase();
@@ -74,7 +100,7 @@ function filterTable() {
     }       
   }
 }
-
+*/
 
 
 function sortTable(n) {
