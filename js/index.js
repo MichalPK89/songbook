@@ -56,6 +56,8 @@ function createSongList(paramsH, paramsD) {
   document.getElementById("list").innerHTML = list;  
 }
 
+
+
 function filterTable() {
 	
   var input, filter, table, tr, td, i, txtValue;
@@ -73,7 +75,7 @@ function filterTable() {
         if(column_value.indexOf(filter) > -1){
             tr[i].style.display = "";
 			break;
-         }else{
+         } else {
            tr[i].style.display = "none"; 
 		}
       }
@@ -81,7 +83,7 @@ function filterTable() {
   }
 }
 
-/*
+/* zaloha povodneho filtra na pvry stlpec
 function filterTable() {
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("filter");
