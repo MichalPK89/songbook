@@ -2,7 +2,7 @@ fetch(list)
     .then(response => response.json())
     .then(songs => {
 
-        const obj = songs;
+        createSongList(songs);
     });
 
 
