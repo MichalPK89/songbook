@@ -1,1 +1,20 @@
 
+fetch("/list_moderne_test.json")
+    .then(r => r.json())
+    .then(songs => {
+
+        let html = "";
+
+        for (let key in songs) {
+
+            html += `
+                <p>
+                    ${songs[key].title}
+                    <br>
+                    ${songs[key].performer}
+                </p>
+            `;
+        }
+
+        document.getElementById("songList").innerHTML = html;
+    });
