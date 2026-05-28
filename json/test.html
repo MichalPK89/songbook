@@ -1,4 +1,7 @@
 
+<p id="test"></p>
+
+<script>
 fetch("/list_moderne_test.json")
     .then(r => r.json())
     .then(songs => {
@@ -16,5 +19,7 @@ fetch("/list_moderne_test.json")
             `;
         }
 
-        document.getElementById("songList").innerHTML = html;
+        document.getElementById("test").innerHTML = html;
     });
+
+    </script>
