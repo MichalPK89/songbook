@@ -1,13 +1,3 @@
-fetch("../json/list_moderne_test.json")
-    .then(response => response.json())
-    .then(songs => {
-
-        console.log(songs);
-
-        createSongList(songs);
-    });
-
-
 function createSongList(paramsH, paramsD) {
   let list = "";
   var x = document.createElement("TABLE");
