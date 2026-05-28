@@ -2,7 +2,7 @@ fetch(list)
     .then(response => response.json())
     .then(songs => {
 
-        const obj = JSON.parse(songs);
+        const obj = songs;
     });
 
 
