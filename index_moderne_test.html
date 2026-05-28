@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Moderné piesne</title>
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+    li { margin: 8px 0; }
+  </style>
+</head>
+<body>
 
+<h1>Moderné piesne 🎵</h1>
+
+  <input type="text" id="filter" onkeyup="filterTable()" placeholder="Vyhľadávanie" title="Type in a name">
+  <br><br>
+  <div id="list"></div>
+  
+
+
+<script src="js/list_moderne.js"></script>
+<script src="js/index2.js"></script>
+<script>
+  let columnNames = ['interpret','hudba','žáner'];
+  let columns = ['performer','music','genre'];
+  createSongList(columnNames, columns)
+</script>
+
+</body>
+</html>
