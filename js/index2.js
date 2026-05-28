@@ -2,7 +2,7 @@ fetch(list)
     .then(response => response.json())
     .then(songs => {
 
-        createSongList(songs);
+        const obj = JSON.parse(songs);
     });
 
 
@@ -61,7 +61,7 @@ function createSongList(paramsH, paramsD) {
       }
 
   
-  document.getElementById("list").innerHTML = list;  
+  document.getElementById("list").innerHTML = obj;  
 }
 
 
