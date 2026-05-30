@@ -1,4 +1,4 @@
-fetch("https://michalpk89.github.io/songbook/json/list_moderne_test.json")
+fetch("../json/list_moderne_test.json")
     .then(response => response.json())
     .then(songs => {
 		console.log(songs);
