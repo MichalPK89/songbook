@@ -6,7 +6,7 @@ fetch(list)
     });
 
 
-function createSongList(index, paramsH, paramsD) {
+function createSongList(paramsH, paramsD) {
   let list = "";
   var x = document.createElement("TABLE");
   x.setAttribute("id", "index");
