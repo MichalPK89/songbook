@@ -1,6 +1,7 @@
 fetch("json/list_moderne_test.json")
     .then(response => response.json())
     .then(songs => {
+		console.log(songs);
 		document.getElementById("list").innerHTML = songs;
         /*createSongList(columnNames, columns);*/
     });
