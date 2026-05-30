@@ -8,7 +8,6 @@ fetch(list)
 
 function createSongList(index, paramsH, paramsD) {
   let list = "";
-  let index = index;
   var x = document.createElement("TABLE");
   x.setAttribute("id", "index");
  
