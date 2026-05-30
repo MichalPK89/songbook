@@ -1,8 +1,8 @@
 fetch(list)
     .then(response => response.json())
     .then(songs => {
-
-        createSongList(columnNames, columns);
+		document.getElementById("list").innerHTML = songs;
+        /*createSongList(columnNames, columns);*/
     });
 
 
