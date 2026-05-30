@@ -2,12 +2,13 @@ fetch(list)
     .then(response => response.json())
     .then(songs => {
 
-        createSongList(songs);
+        createSongList(songs, columnNames, columns);
     });
 
 
-function createSongList(paramsH, paramsD) {
+function createSongList(index, paramsH, paramsD) {
   let list = "";
+  let index = index;
   var x = document.createElement("TABLE");
   x.setAttribute("id", "index");
  
@@ -42,7 +43,7 @@ function createSongList(paramsH, paramsD) {
 		
 		var cell = document.createElement("TD");
 		var a = document.createElement("a");
-		var text = document.createTextNode(songs[song].title);
+		var text = document.createTextNode(index[song].title);
 		a.appendChild(text);
 		a.title = "odkaz";
 		a.href = folder + "/" + song + ".html";
@@ -52,7 +53,7 @@ function createSongList(paramsH, paramsD) {
 		for (i=0; i<paramsD.length; i++) {
 		
 		var cell = document.createElement("TD");
-		var text = document.createTextNode(songs[song][paramsD[i]]);
+		var text = document.createTextNode(index[song][paramsD[i]]);
 		cell.appendChild(text);
 		row.appendChild(cell);
 		}		
