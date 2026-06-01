@@ -2,7 +2,7 @@ fetch(index)
     .then(response => response.json())
     .then(songs => {
 		
-		document.getElementById("list").innerHTML = songs;
+		document.getElementById("list").innerHTML = songs.[cervena_reka].title;
         /*createSongList(columnNames, columns);*/
     });
 
