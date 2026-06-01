@@ -1,9 +1,7 @@
-console.log(index);
 fetch(index)
     .then(response => response.json())
     .then(songs => {
-		console.log(list);
-		console.log(songs);
+		
 		document.getElementById("list").innerHTML = songs;
         /*createSongList(columnNames, columns);*/
     });
