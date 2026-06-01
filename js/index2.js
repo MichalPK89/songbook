@@ -1,4 +1,5 @@
-fetch("json/list_moderne_test.json")
+console.log(list);
+fetch(list)
     .then(response => response.json())
     .then(songs => {
 		console.log(list);
