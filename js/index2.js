@@ -2,12 +2,12 @@ fetch(index)
     .then(response => response.json())
     .then(songs => {
 		
-		document.getElementById("list").innerHTML = songs.[cervena_reka].title;
+		document.getElementById("list").innerHTML = createSongList(columnNames, columns, songs);
         /*createSongList(columnNames, columns);*/
     });
 
 
-function createSongList(paramsH, paramsD) {
+function createSongList(paramsH, paramsD, index) {
   let list = "";
   var x = document.createElement("TABLE");
   x.setAttribute("id", "index");
@@ -37,13 +37,13 @@ function createSongList(paramsH, paramsD) {
   
   x.appendChild(row);
   
-  for (song in songs) {
+  for (song in index) {
 		
 		var row = document.createElement("TR");
 		
 		var cell = document.createElement("TD");
 		var a = document.createElement("a");
-		var text = document.createTextNode(songs[song].title);
+		var text = document.createTextNode(index[song].title);
 		a.appendChild(text);
 		a.title = "odkaz";
 		a.href = folder + "/" + song + ".html";
@@ -53,7 +53,7 @@ function createSongList(paramsH, paramsD) {
 		for (i=0; i<paramsD.length; i++) {
 		
 		var cell = document.createElement("TD");
-		var text = document.createTextNode(songs[song][paramsD[i]]);
+		var text = document.createTextNode(index[song][paramsD[i]]);
 		cell.appendChild(text);
 		row.appendChild(cell);
 		}		
