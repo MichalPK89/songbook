@@ -62,7 +62,7 @@ function createSongList(paramsH, paramsD, index) {
       }
 
   
-  document.getElementById("list").innerHTML = obj;  
+  /*document.getElementById("list").innerHTML = obj;*/
 }
 
 
