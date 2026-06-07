@@ -1,1 +1,65 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div id = "info"></div>
+<br>
+<div id="settings"></div>
+<br><br>
+<div id="song"></div>
+
+<script>
+
+const song =
+`                            
+1. [C#m]Svoj pohľad  [A]dvíhame k výši[E]nám,                                          
+[D]príde [A]na pomoc [E]nám;   
+[E]príde nám [H]Záchranca z Božích [F#]brán,
+[A]milo[H]srdný  [C#m]Pán.                                                                               
+Zblúdených nájde a v náručí
+túli a tíši strach.
+Z kríža nás prúdmi riek vylieči,
+vdýchne  nádej  nám. 
+ 
+R: Milosr[E]dní [H]sú blahoslave[C#m]ní, [A]
+lebo len [E]tí len [H]tí milosrdenstvo [F#]dosiahnu.
+
+2. Ak by nám Pán neodpustil hriech,
+nik z nás neobstojí.  
+Blížneho prijmi a kráčaj s ním,                  
+v láske buď podobný!
+
+R: 
+
+3. Pán naše úpisy splatil sám,                         
+živý Syn z hrobu vstal.                                           
+Duch volá: „Ježiš je slávny Pán!“                        
+Pred svetom ho chváľ!
+
+R:
+ 
+Bridge: Pred Pána  prines trápenia
+a pri ňom slobodne dýchaj!
+Žiť v úžase ti Vzkriesený dá,          
+živý Boh, tvoj Pán.  
+
+R:
+`
+</script>
+
+<script src="../js/list_krestanske.js"></script>
+<script src="../js/songbook.js"></script>
+<script>
+  initPage()
+  renderSettings()
+  renderSong(song)
+</script>
+
+</body>
+<html>
