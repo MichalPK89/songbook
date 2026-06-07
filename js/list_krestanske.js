@@ -26,6 +26,17 @@ const songs = {
     video: "https://www.youtube.com/watch?v=I5RYdgPPqLc"
   },
 
+   milosrdni: {
+    title: "Milosrdní (Hymna SDM 2016)",
+    performer: "BB zbor",
+    music: "Jakub Blycharz",
+    lyrics: "Valéria Juríčková (SK)",
+    genre: "",
+    usage: ["záver"],
+    topic: [""],
+    video: "https://www.youtube.com/watch?v=NfxFe8KQZSA&list=RDNfxFe8KQZSA&start_radio=1"
+  },
+
   obeta_srdca: {
     title: "Obeta srdca",
     performer: "Richard Čanaky",
