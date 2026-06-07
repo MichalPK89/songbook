@@ -33,7 +33,7 @@ const songs = {
     lyrics: "Valéria Juríčková (SK)",
     genre: "",
     usage: ["záver"],
-    topic: [""],
+    topic: ["milosrdenstvo"],
     video: "https://www.youtube.com/watch?v=NfxFe8KQZSA&list=RDNfxFe8KQZSA&start_radio=1"
   },
 
