@@ -15,6 +15,17 @@ const songs = {
     video: "https://www.youtube.com/watch?v=505CrV4U664"
   },
 
+  jezis_ty_si_ma_poznal: {
+    title: "Ježiš Ty si ma poznal",
+    performer: "Drahomíra Ďuračková, Mária Wiesnerová",
+    music: "Drahomíra Ďuračková",
+    lyrics: "Drahomíra Ďuračková",
+    genre: "",
+    usage: ["úvod","prijímanie"],
+    topic: [""],
+    video: "https://www.youtube.com/watch?v=I5RYdgPPqLc"
+  },
+
   obeta_srdca: {
     title: "Obeta srdca",
     performer: "Richard Čanaky",
