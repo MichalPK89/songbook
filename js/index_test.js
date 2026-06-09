@@ -46,7 +46,7 @@ function createSongList(paramsH, paramsD, index) {
 		var text = document.createTextNode(index[song].title);
 		a.appendChild(text);
 		a.title = "odkaz";
-		a.href = folder + "/" + song + ".html";
+		a.href = folder + "?id=" + song;
 		cell.appendChild(a);
 		row.appendChild(cell);
 		
