@@ -1,3 +1,23 @@
+async function initSongPage() {
+
+    const params = new URLSearchParams(location.search);
+
+    const songId = params.get("id");
+
+    const songs = await fetch("songs.json")
+        .then(r => r.json());
+
+    const song = songs[songId];
+
+    document.getElementById("title").innerText = song.title;
+
+    const lyrics = await fetch(song.lyricsFile)
+        .then(r => r.text());
+
+    renderSong(lyrics);
+}
+
+
 function parseLine(line, withChords = true) {
 
     let chords = []
