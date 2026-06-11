@@ -4,12 +4,12 @@ async function initSongPage() {
 
     const songId = params.get("id");
 
-    const songs = await fetch("songs.json")
+    const songs = await fetch(index)
         .then(r => r.json());
 
     const song = songs[songId];
 
-    document.getElementById("title").innerText = song.title;
+    document.getElementById("info").innerText = song.title;
 
     const lyrics = await fetch(song.lyricsFile)
         .then(r => r.text());
