@@ -11,7 +11,7 @@ async function initSongPage() {
 
     document.getElementById("info").innerText = song.title;
 
-    const lyrics = await fetch(song.lyricsFile)
+    const lyrics = await fetch(folder + "/")
         .then(r => r.text());
 
     renderSong(lyrics);
