@@ -18,8 +18,8 @@ const songs = {
   hostina_lasky: {
     title: "Hostina lásky (Vykúpenie)",
     performer: "Kapucíni & Stanley ",
-    music: "Kapucíni & Stanley ",
-    lyrics: "Kapucíni & Stanley ",
+    music: "Ondrej Lazar Tkáč",
+    lyrics: "Ondrej Lazar Tkáč",
     genre: "",
     usage: ["obetovanie"],
     topic: [""],
