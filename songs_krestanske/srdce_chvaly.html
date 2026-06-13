@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
 
+<body>
+
+<div id = "info"></div>
+<br>
+<div id="settings"></div>
+<br><br>
+<div id="song"></div>
+
+<script>
+
+const song =
+`predohra: [D]   [A/C#]   [Em]    [A]
+
+1. [D]Hudba dohrá[A/C#]va, všetko stíši [Em]sa
+a ja prichá[A]dzam
+priniesť niečo snáď, čo pravú cenu má
+čo by si mal rád
+
+R: [Em]Viac ako [D/F#]pieseň ti [A]dám, lebo to, čo žiadaš
+nie je len pieseň sama
+ak niečo iné sa zdá, ty vieš čo je pravda
+Ty vidíš, čo v srdci mám
+
+[D]Túžim sa vrátiť do [A]srdca chvály
+kde si [Em]jedine ty, [G]jedine [A]ty, Je[D]žiš
+Odpusť mi Pane, že neverný som
+Si to jedine ty, jedine ty, Ježiš
+
+2. Nekonečný Kráľ, nik nevysloví
+čo ti patriť má
+Aj keď slabý som, všetko to čo mám
+každý dych je tvoj
+
+R:
+`
+</script>
+
+<script src="../js/list_krestanske.js"></script>
+<script src="../js/songbook.js"></script>
+<script>
+  initPage()
+  renderSettings()
+  renderSong(song)
+</script>
+
+</body>
+<html>
