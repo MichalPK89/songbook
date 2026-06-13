@@ -70,6 +70,17 @@ const songs = {
     video: "https://www.youtube.com/watch?v=IzM92NtNHGk"
   },
 
+  srdce_chvaly: {
+    title: "Srdce chvály (Hudba dohráva)",
+    performer: "Rieka života",
+    music: "Matt Redman",
+    lyrics: "Jakub Novák (sk)",
+    genre: "",
+    usage: ["prijímanie"],
+    topic: ["chvála"],
+    video: "https://www.youtube.com/watch?v=bQw8BdKrXqE"
+  },
+
   vezmi_moje_srdce: {
     title: "Vezmi moje srdce",
     performer: "PiarMusic",
