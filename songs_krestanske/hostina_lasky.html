@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
 
+<body>
+
+<div id = "info"></div>
+<br>
+<div id="settings"></div>
+<br><br>
+<div id="song"></div>
+
+<script>
+
+const song =
+`predohra: [C]  [F]   [G]   [Am]        [F]   [G]       [C]  [F]  [C]
+
+[C]Hostina [F]lásky je [G]priprave[C]ná:
+[Am]baránok, [G]víno a ch[C]lieb.
+[C]Duša s túž[F]bou dať a byť [G]milova[C]ná,
+[F]zastaví [G]času [C]beh.
+
+[F]V očiach sa [C]javí [G]neha a [C]cit,
+[F]okamih [C]lásky [G]znie.
+[F]Srdcia už [C]spája len [G]krehká [Am]niť,
+čo [F]stane sa, [G]len On [C]vie.
+
+[D]Po chvíľach [G]radosti Aprichádza [D]bôľ,
+[Hm]šťastie sa [A]mení v [D]kríž.
+[D]Slabosť tých, [G]s ktorými [A]tri roky [D]bol,
+[G]tlačí ho [A]níž a [D]níž.
+
+[G]Láska však [D]víťazí [A]nad všet[D]kým,
+[G]smrť, tá už [D]nemá [A]síl.
+[G]Sloboda [D]vrátená [A]uväzne[Hm]ným,
+[G]krížom a [A]vzkriese[D]ním. 
+`
+</script>
+
+<script src="../js/list_krestanske.js"></script>
+<script src="../js/songbook.js"></script>
+<script>
+  initPage()
+  renderSettings()
+  renderSong(song)
+</script>
+
+</body>
+<html>
