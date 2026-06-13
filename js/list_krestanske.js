@@ -15,6 +15,17 @@ const songs = {
     video: "https://www.youtube.com/watch?v=505CrV4U664"
   },
 
+  hostina_lasky: {
+    title: "Hostina lásky (Vykúpenie)",
+    performer: "Kapucíni & Stanley ",
+    music: "Kapucíni & Stanley ",
+    lyrics: "Kapucíni & Stanley ",
+    genre: "",
+    usage: ["obetovanie"],
+    topic: [""],
+    video: "https://www.youtube.com/watch?v=tbbMvBNYzA8"
+  },
+
   jezis_ty_si_ma_poznal: {
     title: "Ježiš Ty si ma poznal",
     performer: "Drahomíra Ďuračková, Mária Wiesnerová",
