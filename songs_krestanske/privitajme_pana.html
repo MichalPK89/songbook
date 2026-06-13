@@ -1,1 +1,41 @@
 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div id = "info"></div>
+<br>
+<div id="settings"></div>
+<br><br>
+<div id="song"></div>
+
+<script>
+
+const song =
+`predohra:[E]    [E]     [E]        [Cm]    [H] 
+                            
+[E]Všade tam, kde sú[H] ľudia zíde[E]ní
+[E]v mene Ježiš, [H]v láske zjednote[E]ní. 
+[F#m]Práve tam Boh [C#m]zasľúbil, [A]že bude prítom [E]ný, 
+[F#m]dnes viem, že [E/G#]náš Boh je [A]na tomto [H]mieste prítomný. [H4]   [H]
+[A]Privítajme Pána [E]v tomto chráme, [H]nech ho Božia sláva [E]naplní. 
+[A]Svojmu Bohu spieva[E]me a hráme [H]pieseň spase[E]ných.
+`
+</script>
+
+<script src="../js/list_krestanske.js"></script>
+<script src="../js/songbook.js"></script>
+<script>
+  initPage()
+  renderSettings()
+  renderSong(song)
+</script>
+
+</body>
+<html>
