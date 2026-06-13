@@ -48,6 +48,17 @@ const songs = {
     video: "https://www.youtube.com/watch?v=Hv2PT-n6W60"
   },
 
+  privitajme_pana: {
+    title: "Privítajme Pána",
+    performer: "Tretí deň",
+    music: "M. Tóth",
+    lyrics: "M. Tóth",
+    genre: "",
+    usage: ["úvod"],
+    topic: ["chrám"],
+    video: "https://www.youtube.com/watch?v=IzM92NtNHGk"
+  },
+
   vezmi_moje_srdce: {
     title: "Vezmi moje srdce",
     performer: "PiarMusic",
