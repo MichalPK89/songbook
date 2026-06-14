@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
 
+<body>
+
+<div id = "info"></div>
+<br>
+<div id="settings"></div>
+<br><br>
+<div id="song"></div>
+
+<script>
+
+const song =
+`predohra:[G]    [D/F#]     [Em]     [A]    [D]  [D]
+                            
+1. Tebe [D]Mária chcem spievať túto pieseň v dnešný [Hm]deň,
+Tebe [Em]Mária chcem povedať cez pieseň, že ďaku[A]jem.  [A7]
+
+R1: Ďaku[D]jem Ti, že ma pod svoj [F#]plášť pred ne[Hm]bezpečenstvom ukrý[E]vaš, [E7]
+slová [D]vďaky nestačia a preto [A]teraz prichá[G]dzam. [D] [D]
+
+2. Každé ráno ticho šepkám tieto slová, Mária,
+že chcem stále oslavovať nášho Boha, Glória.
+
+R2: Všetku silu, ktorú v sebe mám aj svojim nepriateľom rozdávam,
+lebo Tvoj syn náš Pán Ježiš Kristus si to prial.
+
+R3: Prosím aby mohol každý z nás cítiť teplo, ktoré rozdávaš,
+veď Ty si plná milosti a si tiež matkou všetkých nás
+`
+</script>
+
+<script src="../js/list_krestanske.js"></script>
+<script src="../js/songbook.js"></script>
+<script>
+  initPage()
+  renderSettings()
+  renderSong(song)
+</script>
+
+</body>
+<html>
