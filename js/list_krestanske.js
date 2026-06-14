@@ -92,6 +92,17 @@ const songs = {
     video: "https://www.youtube.com/watch?v=bQw8BdKrXqE"
   },
 
+  tebe_maria_chcem_spievat: {
+    title: "Tebe Mária chcem spievať",
+    performer: "Káčko",
+    music: "Marina Mesárošová",
+    lyrics: "Marina Mesárošová",
+    genre: "",
+    usage: ["záver"],
+    topic: ["Mariánska"],
+    video: "https://www.youtube.com/watch?v=-KIkJfym2cE&t=1304s"
+  },
+
   vezmi_moje_srdce: {
     title: "Vezmi moje srdce",
     performer: "PiarMusic",
