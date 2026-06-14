@@ -18,7 +18,7 @@ const songs = {
   hladny: {
     title: "Hladný (prichádzam)",
     performer: "Rieka života",
-    music: "K. Scott,
+    music: "K. Scott",
     lyrics: "Rastislav Dluhý (SK)",
     genre: "",
     usage: ["prijímanie"],
