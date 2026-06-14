@@ -15,7 +15,7 @@ const songs = {
     video: "https://www.youtube.com/watch?v=505CrV4U664"
   },
 
-  hladny: {
+  hladnyk: {
     title: "Hladný (prichádzam)",
     performer: "Rieka života",
     music: "K. Scott",
