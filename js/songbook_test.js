@@ -196,7 +196,7 @@ function copySong() {
 }
 
 
-function renderSong(songFile) {
+function renderSong(lyrics) {
 
     let lines = song.split("\n")
     let html = ""
