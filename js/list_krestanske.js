@@ -48,6 +48,17 @@ const songs = {
     video: "https://www.youtube.com/watch?v=I5RYdgPPqLc"
   },
 
+  kriza: {
+    title: "Kríza",
+    performer: "Kapucíni",
+    music: "F. Tkáč",
+    lyrics: "E. Žilineková",
+    genre: "",
+    usage: ["prijímanie","záver"],
+    topic: ["pôst"],
+    video: "https://www.youtube.com/watch?v=yuaa5lYTREk"
+  },
+
    milosrdni: {
     title: "Milosrdní (Hymna SDM 2016)",
     performer: "BB zbor",
