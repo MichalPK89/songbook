@@ -15,6 +15,17 @@ const songs = {
     video: "https://www.youtube.com/watch?v=505CrV4U664"
   },
 
+  hladny: {
+    title: "Hladný (prichádzam)",
+    performer: "Rieka života",
+    music: "K. Scott,
+    lyrics: "Rastislav Dluhý (SK)",
+    genre: "",
+    usage: ["prijímanie"],
+    topic: [""],
+    video: "https://www.youtube.com/watch?v=Y9PiDcokyuE"
+  },
+
   hostina_lasky: {
     title: "Hostina lásky (Vykúpenie)",
     performer: "Kapucíni & Stanley ",
