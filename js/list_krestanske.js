@@ -16,14 +16,14 @@ const songs = {
   },
 
   hladny: {
-    title: "Dotkni sa (mojich očí)",
-    performer: "",
-    music: "Franciszka Godlewska",
-    lyrics: "Ľudmila Koščová (SK)",
+    title: "Hladný (prichádzam)",
+    performer: "Rieka života",
+    music: "K. Scott",
+    lyrics: "Rastislav Dluhý (SK)",
     genre: "",
     usage: ["prijímanie"],
     topic: [""],
-    video: "https://www.youtube.com/watch?v=505CrV4U664"
+    video: "https://www.youtube.com/watch?v=Y9PiDcokyuE"
   },
   
   hostina_lasky: {
