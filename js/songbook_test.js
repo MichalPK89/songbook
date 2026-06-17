@@ -247,8 +247,7 @@ function loadHTML(id, file) {
         })
 }
 
-<!-- renderuj text a akordy-->
-renderSong(song);
+
 
 
 
