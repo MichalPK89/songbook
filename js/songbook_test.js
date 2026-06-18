@@ -12,7 +12,7 @@ async function initSongPage() {
     document.getElementById("info").innerText = song.title;
 
 	const songFile = folder + songId + ".txt"
-
+	console.log(songFile);
     const lyrics = await fetch(songFile)
         .then(r => r.text());
 
