@@ -11,7 +11,7 @@ async function initSongPage() {
 
     document.getElementById("info").innerText = song.title;
 
-	const songFile = "songs.html" + songId + ".txt"
+	const songFile = "songs/" + songId + ".txt"
 
     const lyrics = await fetch(songFile)
         .then(r => r.text());
