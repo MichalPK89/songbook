@@ -136,7 +136,7 @@ function renderSettings() {
             <button onclick="toggleChords()">Akordy</button>
             <button onclick="copySong()">Copy</button>
 			&nbsp
-			<button onclick="window.location="index";">späť</button>
+			<button onclick="window.location=index">späť</button>
         </p>
     `
 }
