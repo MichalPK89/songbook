@@ -10,7 +10,7 @@ async function initSongPage() {
     const song = songs[songId];
 
 	let t = song.title;
-	/*t.setAttribute("id";"title")*/
+	t.setAttribute("id","title")
 
     document.getElementById("info").innerText = t;
 	
