@@ -8,12 +8,16 @@ async function initSongPage() {
         .then(r => r.json());
 
     const song = songs[songId];
+   /*
+	if (song.music === song.lyrics){
+		
+	}*/
 
 	document.getElementById("info").innerHTML = `
-        <div id="title">${song.title}</div>
-        <div id="author">hudba: ${song.music}</div>
-		<div id="author">text: ${song.lyrics}</div>
-    `
+        <div id="title">${song.title}</div> ` + 
+       `<div id="author">hudba: ${song.music}</div>
+		<div id="author">text: ${song.lyrics}</div>`
+    
 	const songFile = folder + songId + ".txt"
 	
     const lyrics = await fetch(songFile)
