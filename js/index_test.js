@@ -13,6 +13,42 @@ if ("serviceWorker" in navigator) {
 }
 
 
+
+async function downloadOffline() {
+
+    const cache = await caches.open("songbook-v1");
+
+    // základné súbory
+    let files = [
+        "/",
+        "index.html",
+        "song.html",
+        "songs.json",
+        "css/style.css",
+        "js/index.js",
+        "js/song.js"
+    ];
+
+    // načítanie song listu
+    const response = await fetch("songs.json");
+
+    const songs = await response.json();
+
+    // pridaj všetky txt
+    Object.values(songs).forEach(song => {
+
+        files.push(song.lyricsFile);
+
+    });
+
+    await cache.addAll(files);
+
+    alert("Offline cache aktualizovaná.");
+}
+
+
+
+
 function createSongList(paramsH, paramsD, index) {
   let list = "";
   var x = document.createElement("TABLE");
