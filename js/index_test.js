@@ -6,6 +6,12 @@ fetch(index)
         /*createSongList(columnNames, columns);*/
     });
 
+if ("serviceWorker" in navigator) {
+
+    navigator.serviceWorker.register("sw.js");
+
+}
+
 
 function createSongList(paramsH, paramsD, index) {
   let list = "";
