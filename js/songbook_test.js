@@ -9,11 +9,11 @@ async function initSongPage() {
 
     const song = songs[songId];
 
-	let t = song.title;
-	/*t.setAttribute("id","title");*/
-
-    document.getElementById("info").innerHTML=t;
-	
+	document.getElementById("info").innerHTML = `
+        <div id="title">${song.title}</div>
+        <div id="author">hudba: ${song.music}</div>
+		<div id="author">text: ${song.lyrics}</div>
+    `
 	const songFile = folder + songId + ".txt"
 	
     const lyrics = await fetch(songFile)
