@@ -12,7 +12,7 @@ async function initSongPage() {
 	let t = song.title;
 	/*t.setAttribute("id","title");*/
 
-    document.getElementById("info").innerHtml=t;
+    document.getElementById("info").innerHTML=t;
 	
 	const songFile = folder + songId + ".txt"
 	
