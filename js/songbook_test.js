@@ -9,7 +9,10 @@ async function initSongPage() {
 
     const song = songs[songId];
 
-    document.getElementById("info").innerText = song.title.setAttribute("id";"title");
+	let t = song.title;
+	t.setAttribute("id";"title")
+
+    document.getElementById("info").innerText = t;
 	
 	const songFile = folder + songId + ".txt"
 	
