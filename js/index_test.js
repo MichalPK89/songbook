@@ -6,6 +6,7 @@ fetch(index)
         /*createSongList(columnNames, columns);*/
     });
 
+
 if ("serviceWorker" in navigator) {
 
     navigator.serviceWorker.register("sw.js");
