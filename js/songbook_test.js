@@ -8,15 +8,19 @@ async function initSongPage() {
         .then(r => r.json());
 
     const song = songs[songId];
-   /*
+   
+    let author = "";
 	if (song.music === song.lyrics){
-		
-	}*/
+		author = `<div id="author">hudba & text: ${song.music}</div>`
+	}
+	else
+	{author = `<div id="author">hudba: ${song.music}</div>
+		<div id="author">text: ${song.lyrics}</div>`}
+	
 
 	document.getElementById("info").innerHTML = `
-        <div id="title">${song.title}</div> ` + 
-       `<div id="author">hudba: ${song.music}</div>
-		<div id="author">text: ${song.lyrics}</div>`
+        <div id="title">${song.title}</div> ` + author;
+       
     
 	const songFile = folder + songId + ".txt"
 	
