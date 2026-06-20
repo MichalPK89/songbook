@@ -24,7 +24,7 @@ async function downloadOffline() {
         "/",
         "moderne/index.html",
         "moderne/songs.html",
-        "moderne/json/list.json",
+        "json/list.json",
         "css/style.css",
         "js/index_test.js",
         "js/songbook_test.js"
