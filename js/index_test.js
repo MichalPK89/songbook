@@ -22,12 +22,12 @@ async function downloadOffline() {
     // základné súbory
     let files = [
         "/",
-        "moderne/index.html",
-        "moderne/songs.html",
+        "index.html",
+        "songs.html",
         "json/list.json",
-        "css/style.css",
-        "js/index_test.js",
-        "js/songbook_test.js"
+        "../css/style.css",
+        "../js/index_test.js",
+        "../js/songbook_test.js"
     ];
 
     // načítanie song listu
