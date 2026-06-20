@@ -24,14 +24,14 @@ async function downloadOffline() {
         "/",
         "moderne/index.html",
         "moderne/songs.html",
-        "moderne/json/songs.json",
+        "moderne/json/list.json",
         "css/style.css",
         "js/index_test.js",
         "js/songbook_test.js"
     ];
 
     // načítanie song listu
-    const response = await fetch("moderne/json/songs.json");
+    const response = await fetch("moderne/json/list.json");
 
     const songs = await response.json();
 
