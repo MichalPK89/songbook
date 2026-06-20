@@ -31,7 +31,7 @@ async function downloadOffline() {
     ];
 
     // načítanie song listu
-    const response = await fetch("moderne/json/list.json");
+    const response = await fetch("json/list.json");
 
     const songs = await response.json();
 
