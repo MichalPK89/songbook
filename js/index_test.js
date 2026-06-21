@@ -38,7 +38,7 @@ async function downloadOffline() {
     // pridaj všetky txt
     Object.values(songs).forEach(song => {
 
-        files.push("songs/" + song);
+        files.push("songs/cervena_reka.txt");
 
     });
 
