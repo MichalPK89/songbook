@@ -38,7 +38,7 @@ async function downloadOffline() {
     // pridaj všetky txt
     Object.values(songs).forEach(song => {
 
-        files.push("songs/" + JSON.stringify(song) + ".txt");
+        files.push("songs/" + song.name + ".txt");
 
     });
 
