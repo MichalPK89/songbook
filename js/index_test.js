@@ -41,7 +41,8 @@ async function downloadOffline() {
         files.push("songs/" + song.name + ".txt");
 
     });*/
-
+	console.log(index);
+	console.log(songs);
 	for (song in index) {
 		files.push("songs/" + song + ".txt");
 	};
