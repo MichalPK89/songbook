@@ -34,13 +34,17 @@ async function downloadOffline() {
     const response = await fetch("json/list.json");
 
     const songs = await response.json();
-
+    /*
     // pridaj všetky txt
     Object.values(songs).forEach(song => {
 
         files.push("songs/" + song.name + ".txt");
 
-    });
+    });*/
+
+	for (song in index) {
+		files.push("songs/" + song + ".txt");
+	};
 
     await cache.addAll(files);
 
