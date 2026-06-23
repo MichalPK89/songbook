@@ -41,7 +41,9 @@ async function downloadOffline() {
 		files.push("songs/" + song + ".txt");
 	};
 
-    await cache.addAll(files);
+    await cache.addAll(files)
+		.then(() => console.log("OK"))
+    	.catch(err => console.error(err));
 
     alert("Offline cache aktualizovaná.");
 }
