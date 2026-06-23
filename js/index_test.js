@@ -34,15 +34,7 @@ async function downloadOffline() {
     const response = await fetch("json/list.json");
 
     const songs = await response.json();
-    /*
-    // pridaj všetky txt
-    Object.values(songs).forEach(song => {
-
-        files.push("songs/" + song.name + ".txt");
-
-    });*/
-	console.log(index);
-	console.log(songs);
+    
 	for (song in songs) {
 		files.push("songs/" + song + ".txt");
 	};
