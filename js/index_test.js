@@ -44,7 +44,7 @@ async function downloadOffline() {
 	console.log(index);
 	console.log(songs);
 	for (song in index) {
-		files.push("songs/" + song + ".txt");
+		files.push("songs/" + "cervena_reka" + ".txt");
 	};
 
     await cache.addAll(files);
