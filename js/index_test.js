@@ -30,8 +30,12 @@ async function downloadOffline() {
         "../js/songbook_test.js"
     ];
 
+	
+
     // načítanie song listu
     const response = await fetch("json/list.json");
+
+	console.log(files);
 
     const songs = await response.json();
     
