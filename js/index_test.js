@@ -22,7 +22,7 @@ async function downloadOffline() {
     // základné súbory
     let files = [
         /* "/", */
-        "index.html",
+        "moderne/index.html",
         "songs.html",
         "json/list.json",
         "../css/style.css",
@@ -35,7 +35,9 @@ async function downloadOffline() {
     // načítanie song listu
     const response = await fetch("json/list.json");
 
-	console.log(files);
+	for (file in files) {
+	console.log(file);
+	}
 
     const songs = await response.json();
     
