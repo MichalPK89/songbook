@@ -35,10 +35,6 @@ async function downloadOffline() {
     // načítanie song listu
     const response = await fetch("json/list.json");
 
-	for (file in files) {
-	console.log(file);
-	}
-
     const songs = await response.json();
     
 	for (song in songs) {
