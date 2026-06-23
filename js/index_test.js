@@ -21,7 +21,7 @@ async function downloadOffline() {
 
     // základné súbory
     let files = [
-        "/",
+        /* "/", */
         "index.html",
         "songs.html",
         "json/list.json",
