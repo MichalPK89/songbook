@@ -1,4 +1,4 @@
-const CACHE_NAME = "songbook-v1";
+const CACHE_NAME = "songbook-v2";
 
 self.addEventListener("fetch", event => {
 
