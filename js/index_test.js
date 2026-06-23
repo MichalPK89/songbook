@@ -22,7 +22,7 @@ async function downloadOffline() {
     // základné súbory
     let files = [
         /* "/", */
-        "moderne/index.html",
+        "index.html",
         "songs.html",
         "json/list.json",
         "../css/style.css",
