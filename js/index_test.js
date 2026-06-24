@@ -17,7 +17,7 @@ if ("serviceWorker" in navigator) {
 
 async function downloadOffline() {
 
-    const cache = await caches.open("songbook-v1");
+    const cache = await caches.open("songbook-v3");
 
     // základné súbory
     let files = [
