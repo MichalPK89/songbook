@@ -21,7 +21,7 @@ self.addEventListener("fetch", event => {
     }
 
     event.respondWith(
-        caches.match(event.request)
+        caches.match(event.request.url.split("?")[0])
             .then(res => res || fetch(event.request))
     );
 });
