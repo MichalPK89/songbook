@@ -2,6 +2,20 @@ const CACHE_NAME = "songbook-v2";
 
 self.addEventListener("fetch", event => {
 
+    event.respondWith(
+
+        caches.match(event.request, {
+            ignoreSearch: true
+        })
+        .then(response => response || fetch(event.request))
+
+    );
+
+});
+
+
+/*self.addEventListener("fetch", event => {
+
     const url = new URL(event.request.url);
 
     // všetky songs.html?id=...
@@ -21,4 +35,4 @@ self.addEventListener("fetch", event => {
             .then(response => response || fetch(event.request))
     );
 
-});
+}); */
