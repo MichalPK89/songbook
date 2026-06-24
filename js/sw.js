@@ -25,27 +25,3 @@ self.addEventListener("fetch", event => {
             .then(res => res || fetch(event.request))
     );
 });
-
-/*
-self.addEventListener("fetch", event => {
-
-    const url = new URL(event.request.url);
-
-    // všetky songs.html?id=...
-    if (url.pathname.endsWith("songs.html")) {
-
-        event.respondWith(
-            caches.match("songs.html")
-                .then(response => response || fetch("songs.html"))
-        );
-
-        return;
-    }
-
-    // ostatné súbory
-    event.respondWith(
-        caches.match(event.request)
-            .then(response => response || fetch(event.request))
-    );
-
-});    */
