@@ -1,15 +1,32 @@
 const CACHE_NAME = "songbook-v3";
 
-
 self.addEventListener("fetch", event => {
 
+    const url = new URL(event.request.url);
+
+    if (url.pathname.endsWith("songs.html")) {
+
+        console.log("Song page:", event.request.url);
+
+        event.respondWith(
+
+            caches.match(event.request.url.split("?")[0])
+                .then(response => {
+
+                    console.log("Found:", response);
+
+                    return response || fetch(event.request);
+
+                })
+
+        );
+
+        return;
+    }
+
     event.respondWith(
-
-        caches.match(event.request, {
-            ignoreSearch: true
-        })
-        .then(response => response || fetch(event.request))
-
+        caches.match(event.request)
+            .then(response => response || fetch(event.request))
     );
 
 });
