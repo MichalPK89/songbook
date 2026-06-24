@@ -1,7 +1,5 @@
 const CACHE_NAME = "songbook-v3";
 
-const CACHE_NAME = "songbook-v3";
-
 self.addEventListener("fetch", event => {
 
     console.log("========== FETCH ==========");
