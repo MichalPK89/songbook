@@ -1,5 +1,6 @@
 const CACHE_NAME = "songbook-v2";
 
+/*
 self.addEventListener("fetch", event => {
 
     event.respondWith(
@@ -11,10 +12,10 @@ self.addEventListener("fetch", event => {
 
     );
 
-});
+});*/
 
 
-/*self.addEventListener("fetch", event => {
+self.addEventListener("fetch", event => {
 
     const url = new URL(event.request.url);
 
@@ -35,4 +36,4 @@ self.addEventListener("fetch", event => {
             .then(response => response || fetch(event.request))
     );
 
-}); */
+}); 
