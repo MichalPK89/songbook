@@ -45,32 +45,3 @@ self.addEventListener("fetch", event => {
 
 });
 
-/*
-self.addEventListener("fetch", event => {
-
-    if (!event || !event.request) return;
-
-    console.log("REQUEST:", event.request.url);
-
-    const url = new URL(event.request.url);
-    const cleanPath = url.pathname.split("?")[0];
-
-
-
-    // songs page fix
-    if (cleanPath.endsWith("/songs.html")) {
-
-        event.respondWith(
-            caches.match(cleanPath)
-                .then(res => res || fetch(event.request))
-        );
-
-        return;
-    }
-
-    event.respondWith(
-        caches.match(event.request.url.split("?")[0])
-            .then(res => res || fetch(event.request))
-    );
-});*/
-
