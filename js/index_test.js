@@ -106,8 +106,7 @@ function createSongList(paramsH, paramsD, index) {
 		x.appendChild(row);
       }
 
-  
-  /*document.getElementById("list").innerHTML = obj;*/
+
 }
 
 
