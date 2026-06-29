@@ -24,7 +24,7 @@ navigator.serviceWorker.register("../js/sw.js")
         console.error(err);
     });
 
-
+}
 
 async function downloadOffline(file) {
 
