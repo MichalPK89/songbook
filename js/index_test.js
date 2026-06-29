@@ -8,11 +8,21 @@ fetch(index)
 
 
 if ("serviceWorker" in navigator) {
-
+/*
     navigator.serviceWorker.register("../js/sw.js");
 	navigator.serviceWorker.getRegistration().then(r => console.log(r.scope));
 
-}
+}*/
+
+navigator.serviceWorker.register("../js/sw.js")
+    .then(reg => {
+        console.log("Registered");
+        console.log(reg);
+        console.log("Scope:", reg.scope);
+    })
+    .catch(err => {
+        console.error(err);
+    });
 
 
 
