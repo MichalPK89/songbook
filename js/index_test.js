@@ -14,7 +14,7 @@ if ("serviceWorker" in navigator) {
 
 }*/
 
-navigator.serviceWorker.register("/songbook/sw.js")
+navigator.serviceWorker.register("../sw.js")
     .then(reg => {
         console.log("Registered");
         console.log(reg);
