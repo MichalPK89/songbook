@@ -10,6 +10,7 @@ fetch(index)
 if ("serviceWorker" in navigator) {
 
     navigator.serviceWorker.register("../js/sw.js");
+	navigator.serviceWorker.getRegistration().then(r => console.log(r.scope));
 
 }
 
