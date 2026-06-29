@@ -1,3 +1,26 @@
+const CACHE_NAME = "songbook-v3";
+
+/* 1. INSTALL */
+self.addEventListener("install", event => {
+
+    console.log("SW: install");
+
+    self.skipWaiting(); // okamžitá aktivácia
+
+});
+
+/* 2. ACTIVATE */
+self.addEventListener("activate", event => {
+
+    console.log("SW: activate");
+
+    event.waitUntil(
+        clients.claim() // okamžite preberie kontrolu nad stránkami
+    );
+
+});
+
+/* 3. FETCH (tvoja logika, zachovaná) */
 self.addEventListener("fetch", event => {
 
     console.log("========== FETCH ==========");
@@ -13,33 +36,20 @@ self.addEventListener("fetch", event => {
 
         .then(response => {
 
-            console.log(
-                "Cache hit:",
-                response ? "YES" : "NO"
-            );
+            console.log("Cache hit:", !!response);
 
             if (response) {
-
-                console.log("Serving from cache");
-
                 return response;
             }
-
-            console.log("Fetching from network");
 
             return fetch(event.request);
 
         })
 
-        .catch(error => {
-
-            console.error("SW ERROR:", error);
-
-            throw error;
-
+        .catch(err => {
+            console.error("SW ERROR:", err);
+            throw err;
         })
 
     );
-
 });
-
