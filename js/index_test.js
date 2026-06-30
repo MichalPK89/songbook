@@ -23,7 +23,12 @@ navigator.serviceWorker.register("../sw.js")
 
 /*async function downloadOffline(file) {*/
 async function downloadOffline(book) {
-	const reg = await navigator.serviceWorker.ready;
+
+    console.log("Sending message to SW");
+
+    const reg = await navigator.serviceWorker.ready;
+
+    console.log("SW ready:", reg);
 
     reg.active.postMessage({
         type: "DOWNLOAD_OFFLINE",
