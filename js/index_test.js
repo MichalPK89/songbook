@@ -21,13 +21,22 @@ navigator.serviceWorker.register("../sw.js")
 
 }
 
-async function downloadOffline(file) {
+/*async function downloadOffline(file) {*/
+async function downloadOffline(book) {
+	const reg = await navigator.serviceWorker.ready;
 
+    reg.active.postMessage({
+        type: "DOWNLOAD_OFFLINE",
+        book: book
+    });
+
+}
+/*
     const cache = await caches.open("songbook-" + file + "-v1");
 
     // základné súbory
     let files = [
-        /* "/", */
+      
         "index.html",
         "songs.html",
         "json/list.json",
@@ -57,7 +66,7 @@ async function downloadOffline(file) {
     alert("Offline cache aktualizovaná.");
 }
 
-
+*/
 
 
 function createSongList(paramsH, paramsD, index) {
