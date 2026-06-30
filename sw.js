@@ -54,6 +54,10 @@ self.addEventListener("fetch", event => {
 
 self.addEventListener("message", event => {
 
-    console.log("SW MESSAGE:", event.data);
+    console.log("SW MESSAGE RECEIVED:", event.data);
 
+    if (!event.data || event.data.type !== "DOWNLOAD_OFFLINE")
+        return;
+
+    console.log("START DOWNLOAD FOR:", event.data.book);
 });
