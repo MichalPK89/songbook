@@ -8,11 +8,6 @@ fetch(index)
 
 
 if ("serviceWorker" in navigator) {
-/*
-    navigator.serviceWorker.register("../js/sw.js");
-	navigator.serviceWorker.getRegistration().then(r => console.log(r.scope));
-
-}*/
 
 navigator.serviceWorker.register("../sw.js")
     .then(reg => {
@@ -52,7 +47,7 @@ async function downloadOffline(file) {
     
 	for (song in songs) {
 		files.push("songs/" + song + ".txt");
-		/*files.push("songs.html?id=" + song);*/
+		files.push("songs.html?id=" + song);
 	};
 
     await cache.addAll(files)
