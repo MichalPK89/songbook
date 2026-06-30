@@ -39,7 +39,8 @@ async function downloadOffline(file) {
         "../css/style.css",
 		"../css/index.css",
         "../js/index_test.js",
-        "../js/songbook_test.js"
+        "../js/songbook_test.js",
+		"songbook/favicon.ico"
     ];
 
 	
