@@ -1,5 +1,3 @@
-const CACHE_NAME = "songbook-v3";
-
 /* 1. INSTALL */
 self.addEventListener("install", event => {
 
