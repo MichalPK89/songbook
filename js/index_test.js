@@ -37,7 +37,7 @@ async function downloadOffline(file) {
         "songs.html",
         "json/list.json",
         "../css/style.css",
-		"../css/index.css",
+		"../css/index.css", 
         "../js/index_test.js",
         "../js/songbook_test.js",
 		"././favicon.ico"
