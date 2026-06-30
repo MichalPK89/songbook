@@ -52,7 +52,7 @@ async function downloadOffline(file) {
     
 	for (song in songs) {
 		files.push("songs/" + song + ".txt");
-		files.push("songs.html?id=" + song);
+		/*files.push("songs.html?id=" + song);*/
 	};
 
     await cache.addAll(files)
