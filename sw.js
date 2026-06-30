@@ -51,3 +51,9 @@ self.addEventListener("fetch", event => {
 
     );
 });
+
+self.addEventListener("message", event => {
+
+    console.log("SW MESSAGE:", event.data);
+
+});
