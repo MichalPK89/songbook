@@ -26,7 +26,7 @@ R:
 [E]Naaa... .. ... ..
 [H]... ..[G#]... ...
 [A]... [H].. [E]...[F#m]..
-[Edim]...[G#7].. [C#mi] ... [H]...
+[Edim]...  [G#7]..   [C#mi] ...  [H]...
 
 
 3. Hej, des tam, de čorni vody,
@@ -38,8 +38,8 @@ R:
 
 [E]Hej, hej!
 [H]Hej, hej! [G#]...
-[A]...[H]...[E]...[F#]m
-[Edim]...    [As].  ..[C#mi]
+[A]...[H]...[E]...[F#m]
+[Edim]...    [As].  ..[C#mi]     [H]
 
 [E]Hej, hej!
 [H]Hej, hej! [G#]. 
