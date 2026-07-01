@@ -39,7 +39,7 @@ R:
 [E]Hej, hej!
 [H]Hej, hej! [G#]...
 [A]...[H]...[E]...[F#m]
-[Edim]...    [As].  ..[C#mi]     [H]
+[Edim]...    [G#].  ..[C#mi]     [H]
 
 [E]Hej, hej!
 [H]Hej, hej! [G#]. 
