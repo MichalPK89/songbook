@@ -1,5 +1,5 @@
 1. [C#mi]V dobrom aj v zlom budeš moja,
-[H]rany tie sa [G#]s tebou [G#7]zhoja.
+[H]rany tie sa [G#]s tebou zhoja.
 [A]Keď je [H]slnko, [E]keď je [F#m]zima,
 [Gdim]ty si [G#7]moja [C#mi]domo-[H]vina.
 
@@ -24,9 +24,9 @@ R:
 
 2x
 [E]Naaa... .. ... ..
-[H]... ..[G#]... ...
+[H]... ..  ...  [G#]...
 [A]... [H].. [E]...[F#m]..
-[Gdim]...    [G#7]..     [C#mi] ...  [H]...
+[D#7b9]...     [G#7]..     [C#mi] ...  [H]...
 
 
 3. Hej, des tam, de čorni vody,
@@ -39,11 +39,11 @@ R:
 [E]Hej, hej!
 [H]Hej, hej! [G#]...
 [A]...[H]...[E]...[F#m]
-[Gdim]...    [G#].  ..[C#mi]     [H]
+[D#7b9]...      [G#].  ..[C#mi]     [H]
 
 [E]Hej, hej!
 [H]Hej, hej! [G#]. 
 [A]...[H]...[E]...[F#m]
-[Gdim]...      [G#]...
+[D#7b9]...      [G#]...
 
 [C#mi]Hej, [G#]hej, [C#mi]hej!
