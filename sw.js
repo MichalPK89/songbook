@@ -53,6 +53,10 @@ self.addEventListener("fetch", event => {
 });
 
 self.addEventListener("message", event => {
+    console.log("🔥 MESSAGE HIT");
+});
+
+self.addEventListener("message", event => {
 
     console.log("SW MESSAGE RECEIVED:", event.data);
 
