@@ -41,7 +41,7 @@ navigator.serviceWorker.getRegistrations().then(rs => {
 });
 
 /*async function downloadOffline(file) {*/
-async function downloadOffline(book) {
+/*async function downloadOffline(book) {
 
     console.log("Sending message to SW");
 
@@ -53,6 +53,27 @@ reg.active.postMessage({
     type: "DOWNLOAD_OFFLINE",
     book: book
 });
+
+}*/
+
+async function downloadOffline(book) {
+
+    const reg = await navigator.serviceWorker.ready;
+
+    const sw = navigator.serviceWorker.controller;
+
+    console.log("Registration:", reg);
+    console.log("Controller:", sw);
+
+    if (!sw) {
+        console.error("No controller!");
+        return;
+    }
+
+    sw.postMessage({
+        type: "DOWNLOAD_OFFLINE",
+        book: book
+    });
 
 }
 /*
