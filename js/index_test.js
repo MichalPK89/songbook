@@ -36,6 +36,10 @@ navigator.serviceWorker.ready.then(reg => {
 
 });
 
+navigator.serviceWorker.getRegistrations().then(rs => {
+    rs.forEach(r => r.unregister());
+});
+
 /*async function downloadOffline(file) {*/
 async function downloadOffline(book) {
 
