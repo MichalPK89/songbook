@@ -52,26 +52,18 @@ self.addEventListener("fetch", event => {
     );
 });
 
-self.addEventListener("message", event => {
-    console.log("🔥 MESSAGE HIT");
-});
-
-self.addEventListener("message", event => {
-
-    console.log("🔥 MESSAGE RECEIVED IN SW");
-
-    console.log(event.data);
-
-    event.ports?.[0]?.postMessage?.("OK");
-
-});
-
-self.addEventListener("message", event => {
-
-    console.log("SW MESSAGE RECEIVED:", event.data);
+self.addEventListener("message", async event => {
 
     if (!event.data || event.data.type !== "DOWNLOAD_OFFLINE")
         return;
 
-    console.log("START DOWNLOAD FOR:", event.data.book);
+    const book = event.data.book;
+
+    console.log("START DOWNLOAD:", book);
+
+    const response = await fetch(`${book}/json/list.json`);
+    const songs = await response.json();
+
+    console.log(songs);
+
 });
