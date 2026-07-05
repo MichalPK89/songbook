@@ -58,6 +58,16 @@ self.addEventListener("message", event => {
 
 self.addEventListener("message", event => {
 
+    console.log("🔥 MESSAGE RECEIVED IN SW");
+
+    console.log(event.data);
+
+    event.ports?.[0]?.postMessage?.("OK");
+
+});
+
+self.addEventListener("message", event => {
+
     console.log("SW MESSAGE RECEIVED:", event.data);
 
     if (!event.data || event.data.type !== "DOWNLOAD_OFFLINE")
