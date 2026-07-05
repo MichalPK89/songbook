@@ -28,12 +28,12 @@ async function downloadOffline(book) {
 
     const reg = await navigator.serviceWorker.ready;
 
-    console.log("SW ready:", reg);
+console.log("ACTIVE SW:", reg.active);
 
-    reg.active.postMessage({
-        type: "DOWNLOAD_OFFLINE",
-        book: book
-    });
+reg.active.postMessage({
+    type: "DOWNLOAD_OFFLINE",
+    book: book
+});
 
 }
 /*
