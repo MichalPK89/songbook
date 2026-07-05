@@ -21,6 +21,21 @@ navigator.serviceWorker.register("../sw.js")
 
 }
 
+navigator.serviceWorker.ready.then(reg => {
+
+    const messageChannel = new MessageChannel();
+
+    messageChannel.port1.onmessage = (e) => {
+        console.log("SW RESPONSE:", e.data);
+    };
+
+    reg.active.postMessage(
+        { type: "TEST" },
+        [messageChannel.port2]
+    );
+
+});
+
 /*async function downloadOffline(file) {*/
 async function downloadOffline(book) {
 
