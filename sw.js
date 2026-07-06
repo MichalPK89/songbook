@@ -59,11 +59,23 @@ self.addEventListener("message", async event => {
 
     const book = event.data.book;
 
-    console.log("START DOWNLOAD:", book);
+    try {
 
-    const response = await fetch(`${book}/json/list.json`);
-    const songs = await response.json();
+        console.log("Downloading:", book);
 
-    console.log(songs);
+        const response = await fetch(`${book}/json/list.json`);
+
+        console.log("Fetch status:", response.status);
+
+        const songs = await response.json();
+
+        console.log("Songs loaded:", Object.keys(songs).length);
+
+    }
+    catch (err) {
+
+        console.error("DOWNLOAD ERROR:", err);
+
+    }
 
 });
