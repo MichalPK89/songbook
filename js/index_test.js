@@ -9,11 +9,21 @@ fetch(index)
 
 if ("serviceWorker" in navigator) {
 
-navigator.serviceWorker.register("../sw.js")
+navigator.serviceWorker.register("/songbook/sw.js")
     .then(reg => {
         console.log("Registered");
         console.log(reg);
         console.log("Scope:", reg.scope);
+
+		if (navigator.serviceWorker.controller) {
+
+                console.log("State:", navigator.serviceWorker.controller.state);
+
+                navigator.serviceWorker.controller.onstatechange = () => {
+                    console.log("NEW STATE:", navigator.serviceWorker.controller.state);
+                };
+
+            }
     })
     .catch(err => {
         console.error(err);
