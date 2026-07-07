@@ -87,6 +87,15 @@ self.addEventListener("message", async event => {
 
         console.log("Offline cache saved.");
 
+        const clientsList = await self.clients.matchAll();
+
+        for (const client of clientsList) {
+        client.postMessage({
+            type: "DOWNLOAD_FINISHED",
+            book: book
+        });
+}
+
     }
     catch (err) {
 
