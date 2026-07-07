@@ -22,22 +22,32 @@ self.addEventListener("activate", event => {
 /* 3. FETCH (tvoja logika, zachovaná) */
 self.addEventListener("fetch", event => {
 
-   
     const url = new URL(event.request.url);
 
-    event.respondWith(
+    // navigácia na songs.html?id=...
+    if (url.pathname.endsWith("/songs.html")) {
 
-                const url = new URL(event.request.url);
-                
-                if (url.pathname.endsWith("/songs.html")) {
-                
-                event.respondWith(
-                    caches.match(`${url.origin}/songbook/moderne/songs.html`)
-                        .then(res => res || fetch(event.request))
-                    );
-                
-                    return;
-                }
+        event.respondWith(
+            caches.match(event.request.url.split("?")[0])
+                .then(response => {
+
+                    if (response) {
+                        console.log("SONGS FROM CACHE");
+                        return response;
+                    }
+
+                    console.log("SONGS FROM NETWORK");
+                    return fetch(event.request);
+
+                })
+        );
+
+        return;
+    }
+
+
+    // ostatné súbory
+    event.respondWith(
 
         caches.match(event.request, {
             ignoreSearch: true
@@ -45,7 +55,6 @@ self.addEventListener("fetch", event => {
 
         .then(response => {
 
-           
             if (response) {
                 return response;
             }
@@ -54,13 +63,9 @@ self.addEventListener("fetch", event => {
 
         })
 
-        .catch(err => {
-            console.error("SW ERROR:", err);
-            throw err;
-        })
-
     );
-}); 
+
+});
 
 self.addEventListener("message", async event => {
 
