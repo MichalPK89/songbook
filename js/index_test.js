@@ -60,78 +60,17 @@ navigator.serviceWorker.getRegistrations().then(rs => {
     rs.forEach(r => r.unregister());
 });
 
-/*async function downloadOffline(file) {*/
-/*async function downloadOffline(book) {
-
-    console.log("Sending message to SW");
-
-    const reg = await navigator.serviceWorker.ready;
-
-console.log("ACTIVE SW:", reg.active);
-
-reg.active.postMessage({
-    type: "DOWNLOAD_OFFLINE",
-    book: book
-});
-
-}*/
 
 async function downloadOffline(book) {
 
     const reg = await navigator.serviceWorker.ready;
 
-    const sw = navigator.serviceWorker.controller;
-
-    console.log("Registration:", reg);
-    console.log("Controller:", sw);
-
-    if (!sw) {
-        console.error("No controller!");
-        return;
-    }
-
-    sw.postMessage({
+    navigator.serviceWorker.controller.postMessage({
         type: "DOWNLOAD_OFFLINE",
         book: book
     });
 
 }
-/*
-    const cache = await caches.open("songbook-" + file + "-v1");
-
-    // základné súbory
-    let files = [
-      
-        "index.html",
-        "songs.html",
-        "json/list.json",
-        "../css/style.css",
-		"../css/index.css", 
-        "../js/index_test.js",
-        "../js/songbook_test.js",
-		"././favicon.ico"
-    ];
-
-	
-
-    // načítanie song listu
-    const response = await fetch("json/list.json");
-
-    const songs = await response.json();
-    
-	for (song in songs) {
-		files.push("songs/" + song + ".txt");
-		files.push("songs.html?id=" + song);
-	};
-
-    await cache.addAll(files)
-		.then(() => console.log("OK"))
-    	.catch(err => console.error(err));
-
-    alert("Offline cache aktualizovaná.");
-}
-
-*/
 
 
 function createSongList(paramsH, paramsD, index) {
