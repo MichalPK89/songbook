@@ -18,28 +18,8 @@ self.addEventListener("activate", event => {
 
 });
 
-self.addEventListener("fetch", event => {
 
-    event.respondWith((async () => {
-
-        const cached = await caches.match(event.request, {
-            ignoreSearch: true
-        });
-
-        if (cached) {
-            console.log("CACHE:", event.request.url);
-            return cached;
-        }
-
-        console.log("NETWORK:", event.request.url);
-
-        return fetch(event.request);
-
-    })());
-
-});
-
-/* 3. FETCH (tvoja logika, zachovaná) 
+/* 3. FETCH (tvoja logika, zachovaná) */
 self.addEventListener("fetch", event => {
 
    
@@ -68,7 +48,7 @@ self.addEventListener("fetch", event => {
         })
 
     );
-}); */
+}); 
 
 self.addEventListener("message", async event => {
 
