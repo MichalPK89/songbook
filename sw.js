@@ -22,6 +22,8 @@ self.addEventListener("activate", event => {
 /* 3. FETCH (tvoja logika, zachovaná) */
 self.addEventListener("fetch", event => {
 
+    console.log("FETCH:", event.request.url);
+    
     const url = new URL(event.request.url);
 
     // navigácia na songs.html?id=...
