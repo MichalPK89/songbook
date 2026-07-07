@@ -61,32 +61,27 @@ self.addEventListener("message", async event => {
 
     try {
 
-    console.log("Downloading:", book);
+        console.log("Downloading:", book);
 
-    const response = await fetch(`${book}/json/list.json`);
-    const songs = await response.json();
+        const response = await fetch(`${book}/json/list.json`);
+        const songs = await response.json();
 
-    let files = [
-        `${book}/index.html`,
-        `${book}/songs.html`,
-        `${book}/json/list.json`,
-        "css/style.css",
-        "js/index_test.js",
-        "js/songbook_test.js"
-    ];
+        let files = [
+            `${book}/index.html`,
+            `${book}/songs.html`,
+            `${book}/json/list.json`,
+            "css/style.css",
+            "js/index_test.js",
+            "js/songbook_test.js"
+        ];
 
-    for (const song in songs) {
-        files.push(`${book}/songs/${song}.txt`);
+        for (const song in songs) {
+            files.push(`${book}/songs/${song}.txt`);
+        }
+
+        console.log(files);
+
     }
-
-    console.log(files);
-
-}
-catch (err) {
-
-    console.error("DOWNLOAD ERROR:", err);
-
-}
     catch (err) {
 
         console.error("DOWNLOAD ERROR:", err);
