@@ -23,6 +23,13 @@ self.addEventListener("activate", event => {
 self.addEventListener("fetch", event => {
 
     console.log("FETCH:", event.request.url);
+
+    console.log(
+    "MODE:",
+    event.request.mode,
+    "URL:",
+    event.request.url
+    );
     
     const url = new URL(event.request.url);
 
