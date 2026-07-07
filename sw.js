@@ -58,9 +58,7 @@ self.addEventListener("fetch", event => {
     // ostatné súbory
     event.respondWith(
 
-        caches.match(event.request, {
-            ignoreSearch: true
-        })
+        caches.match(event.request)
 
         .then(response => {
 
