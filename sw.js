@@ -27,6 +27,18 @@ self.addEventListener("fetch", event => {
 
     event.respondWith(
 
+                const url = new URL(event.request.url);
+                
+                if (url.pathname.endsWith("/songs.html")) {
+                
+                event.respondWith(
+                    caches.match(`${url.origin}/songbook/moderne/songs.html`)
+                        .then(res => res || fetch(event.request))
+                    );
+                
+                    return;
+                }
+
         caches.match(event.request, {
             ignoreSearch: true
         })
