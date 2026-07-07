@@ -81,6 +81,12 @@ self.addEventListener("message", async event => {
 
         console.log(files);
 
+        const cache = await caches.open(`songbook-${book}-v1`);
+
+        await cache.addAll(files);
+
+        console.log("Offline cache saved.");
+
     }
     catch (err) {
 
