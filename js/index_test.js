@@ -31,6 +31,16 @@ navigator.serviceWorker.register("/songbook/sw.js")
 
 }
 
+navigator.serviceWorker.addEventListener("message", event => {
+
+    if (event.data.type === "DOWNLOAD_FINISHED") {
+
+        alert(`Offline verzia "${event.data.book}" bola úspešne uložená.`);
+
+    }
+
+});
+
 navigator.serviceWorker.ready.then(reg => {
 
     const messageChannel = new MessageChannel();
