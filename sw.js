@@ -21,9 +21,7 @@ self.addEventListener("activate", event => {
 /* 3. FETCH (tvoja logika, zachovaná) */
 self.addEventListener("fetch", event => {
 
-    console.log("========== FETCH ==========");
-    console.log("Request URL:", event.request.url);
-
+   
     const url = new URL(event.request.url);
 
     event.respondWith(
@@ -34,8 +32,7 @@ self.addEventListener("fetch", event => {
 
         .then(response => {
 
-            console.log("Cache hit:", !!response);
-
+           
             if (response) {
                 return response;
             }
