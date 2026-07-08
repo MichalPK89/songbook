@@ -94,8 +94,8 @@ self.addEventListener("message", async event => {
             `${book}/json/list.json`,
             "css/style.css",
             "css/index.css",
-            "js/index_test.js",
-            "js/songbook_test.js"
+            "js/index.js",
+            "js/songbook.js"
         ];
 
         for (const song in songs) {
