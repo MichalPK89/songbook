@@ -1,9 +1,11 @@
+document.getElementById("list").innerHTML = createSongList(columnNames, columns, songs);
+
 fetch(index)
     .then(response => response.json())
     .then(songs => {
 		
 		document.getElementById("list").innerHTML = createSongList(columnNames, columns, songs);
-        /*createSongList(columnNames, columns);*/
+       
     });
 
 
