@@ -56,14 +56,12 @@ navigator.serviceWorker.ready.then(reg => {
 
 });
 
-navigator.serviceWorker.getRegistrations().then(rs => {
-    rs.forEach(r => r.unregister());
-});
+
 
 
 async function downloadOffline(book) {
 
-    const reg = await navigator.serviceWorker.ready;
+    await navigator.serviceWorker.ready;
 
     navigator.serviceWorker.controller.postMessage({
         type: "DOWNLOAD_OFFLINE",
