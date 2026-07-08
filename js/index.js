@@ -1,3 +1,5 @@
+document.getElementById("list").innerHTML = '';
+
 fetch(index)
     .then(response => response.json())
     .then(songs => {
