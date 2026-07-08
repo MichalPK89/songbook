@@ -93,6 +93,7 @@ self.addEventListener("message", async event => {
             `${book}/songs.html`,
             `${book}/json/list.json`,
             "css/style.css",
+            "css/index.css",
             "js/index_test.js",
             "js/songbook_test.js"
         ];
