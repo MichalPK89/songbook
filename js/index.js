@@ -1,4 +1,4 @@
-document.getElementById("list").innerHTML = '';
+document.getElementById("list").innerHTML = 'a';
 
 fetch(index)
     .then(response => response.json())
