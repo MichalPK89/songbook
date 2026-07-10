@@ -126,7 +126,7 @@ function changeKey(step) {
 
 function resetKey() {
     TRANSPOSE = 0
-    renderSong(song)
+    renderSong(text)
     renderTransposer()
 }
 
