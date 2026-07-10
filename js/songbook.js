@@ -1,3 +1,5 @@
+const text;
+
 async function initSongPage() {
 
     const params = new URLSearchParams(location.search);
@@ -27,9 +29,12 @@ async function initSongPage() {
     const lyrics = await fetch(songFile)
         .then(r => r.text());
 
+	text = lyrics;
+
     renderSong(lyrics);
 }
 
+console.log(text);
 
 function parseLine(line, withChords = true) {
 
