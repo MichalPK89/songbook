@@ -134,7 +134,7 @@ let showChords = true;
 
 function toggleChords() {
     showChords = !showChords
-    renderSong(song)
+    renderSong(text)
     renderTransposer()
 }
 
