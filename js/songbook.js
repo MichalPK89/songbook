@@ -120,7 +120,7 @@ function renderLine(row) {
 
 function changeKey(step) {
     TRANSPOSE += step
-    renderSong(song)
+    renderSong(text)
     renderTransposer()
 }
 
