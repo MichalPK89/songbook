@@ -1,4 +1,4 @@
-let text = '';
+let song = '';
 
 async function initSongPage() {
 
@@ -29,12 +29,11 @@ async function initSongPage() {
     const lyrics = await fetch(songFile)
         .then(r => r.text());
 
-	text = lyrics;
+	song = lyrics;
 
     renderSong(lyrics);
 }
 
-console.log(text);
 
 function parseLine(line, withChords = true) {
 
@@ -120,13 +119,13 @@ function renderLine(row) {
 
 function changeKey(step) {
     TRANSPOSE += step
-    renderSong(text)
+    renderSong(song)
     renderTransposer()
 }
 
 function resetKey() {
     TRANSPOSE = 0
-    renderSong(text)
+    renderSong(song)
     renderTransposer()
 }
 
@@ -134,7 +133,7 @@ let showChords = true;
 
 function toggleChords() {
     showChords = !showChords
-    renderSong(text)
+    renderSong(song)
     renderTransposer()
 }
 
