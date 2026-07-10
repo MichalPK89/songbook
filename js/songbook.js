@@ -31,7 +31,7 @@ async function initSongPage() {
 
 	song = lyrics;
 
-    renderSong(lyrics);
+    renderSong(song);
 }
 
 
