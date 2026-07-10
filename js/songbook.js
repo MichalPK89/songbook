@@ -120,13 +120,13 @@ function renderLine(row) {
 function changeKey(step) {
     TRANSPOSE += step
     renderSong(song)
-    renderTransposer()
+    /*renderTransposer()*/
 }
 
 function resetKey() {
     TRANSPOSE = 0
     renderSong(song)
-    renderTransposer()
+    /*renderTransposer()*/
 }
 
 let showChords = true;
@@ -134,7 +134,7 @@ let showChords = true;
 function toggleChords() {
     showChords = !showChords
     renderSong(song)
-    renderTransposer()
+    /*renderTransposer()*/
 }
 
 
