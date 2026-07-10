@@ -1,4 +1,4 @@
-const text;
+const text = '';
 
 async function initSongPage() {
 
