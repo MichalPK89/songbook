@@ -1,4 +1,5 @@
 let song = '';
+let format = 0;
 
 async function initSongPage() {
 
@@ -148,7 +149,7 @@ function renderSettings() {
             <button onclick="changeKey(2)">+2</button>
             <button onclick="resetKey()">Reset</button>
             &nbsp;
-            <button onclick="toggleChords()">Akordy</button>
+            <button onclick="toggleChords()">Formát</button>
             <button onclick="copySong()">Copy</button>
 			&nbsp
 			<button onclick="window.location='index.html'">späť</button>
