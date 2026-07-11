@@ -138,7 +138,6 @@ function formatChange() {
 		formatz = formats[i+1];
 		console.log(formatz);
 	}
-}
 
 function toggleChords() {
     showChords = !showChords
