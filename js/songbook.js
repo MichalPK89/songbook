@@ -134,9 +134,9 @@ function resetKey() {
 let showChords = true;
 
 function formatChange() {
-	for (let i in formats){
-		format += format;
-		console.log(format);
+		let i = format;
+		formatz = formats[i+1];
+		console.log(formatz);
 	}
 }
 
