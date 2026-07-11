@@ -134,7 +134,7 @@ function resetKey() {
 let showChords = true;
 
 function formatChange() {
-	if (format< formats.length){
+	if (format< formats.length-1){
 		format = formats[format+1]
 	}
 	else
