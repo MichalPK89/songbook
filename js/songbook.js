@@ -134,9 +134,15 @@ function resetKey() {
 let showChords = true;
 
 function formatChange() {
-		format = formats[format+1];
-		console.log(format);
+	if (format< formats.length){
+		format = formats[format+1]
 	}
+	else
+	{
+		format = formats[0]
+	}
+		console.log(format);
+}
 
 function toggleChords() {
     showChords = !showChords
