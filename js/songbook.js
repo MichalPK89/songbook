@@ -1,5 +1,6 @@
 let song = '';
-let format = 0;
+let formats = [0, 1, 2]
+let format = formats[0];
 
 async function initSongPage() {
 
@@ -131,6 +132,13 @@ function resetKey() {
 }
 
 let showChords = true;
+
+function formatChange() {
+	for (let i in formats){
+		format += format;
+		console.log(format);
+	}
+}
 
 function toggleChords() {
     showChords = !showChords
