@@ -46,6 +46,9 @@ function drawSong(){
 		case 1:
 			toggleChords();
 			break;
+		case 2:
+			toggleChords();
+			break;
 		case 3:
 			break;
 	}
