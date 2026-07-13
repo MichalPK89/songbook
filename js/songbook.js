@@ -34,7 +34,21 @@ async function initSongPage() {
 
 	song = lyrics;
 
-    renderSong(song);
+    drawSong();
+}
+
+
+function drawSong(){
+	switch(format){
+		case 0:
+			renderSong(song);
+			break;
+		case 1:
+			toggleChords();
+			break;
+		case 3:
+			break;
+	}
 }
 
 
@@ -145,18 +159,6 @@ function formatChange() {
 	drawSong();
 }
 
-function drawSong(){
-	switch(format){
-		case 0:
-			renderSong(song);
-			break;
-		case 1:
-			toggleChords();
-			break;
-		case 3:
-			break;
-	}
-}
 
 function toggleChords() {
     showChords = !showChords
