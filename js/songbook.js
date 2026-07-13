@@ -142,6 +142,10 @@ function formatChange() {
 	{
 		format = formats[0];
 	};
+	drawSong();
+}
+
+function drawSong(){
 	switch(format){
 		case 0:
 			renderSong(song);
@@ -152,7 +156,6 @@ function formatChange() {
 		case 3:
 			break;
 	}
-		
 }
 
 function toggleChords() {
