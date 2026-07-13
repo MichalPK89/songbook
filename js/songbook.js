@@ -1,5 +1,5 @@
 let song = '';
-let formats = [0, 1, 2]
+let formats = [0, 1, 2, 3]
 let format = formats[0];
 let TRANSPOSE = 0
 
