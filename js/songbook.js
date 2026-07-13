@@ -1,6 +1,7 @@
 let song = '';
 let formats = [0, 1, 2]
 let format = formats[0];
+let TRANSPOSE = 0
 
 async function initSongPage() {
 
@@ -94,7 +95,7 @@ function transposeChord(chord, shift) {
 }
 
 
-let TRANSPOSE = 0 // change this
+
 
 function renderLine(row) {
 
