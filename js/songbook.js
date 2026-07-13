@@ -141,8 +141,18 @@ function formatChange() {
 	else
 	{
 		format = formats[0];
+	};
+	switch(format){
+		case 0:
+			renderSong(song);
+			break;
+		case 1:
+			toggleChords();
+			break;
+		case 3:
+			break;
 	}
-		toggleChords();
+		
 }
 
 function toggleChords() {
