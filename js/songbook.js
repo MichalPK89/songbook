@@ -175,9 +175,9 @@ function renderSettings() {
     document.getElementById("settings").innerHTML = `
         <p>
             <button onclick="changeKey(-2)">-2</button>
-            <button onclick="changeKey(-1)">-1</button>
-			<p>TRANSPOSE</p>
-            <button onclick="changeKey(1)">+1</button>
+            <button onclick="changeKey(-1)">-1</button>`
+			+TRANSPOSE+
+            `<button onclick="changeKey(1)">+1</button>
             <button onclick="changeKey(2)">+2</button>
             <button onclick="resetKey()">Reset</button>
             &nbsp;
