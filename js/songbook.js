@@ -1,7 +1,8 @@
 let song = '';
 let formats = [0, 1, 2, 3]
 let format = formats[0];
-let TRANSPOSE = 0
+let TRANSPOSE = 0;
+let transposedValue = (TRANSPOSE > 0) ? '+' + TRANSPOSE : TRANSPOSE;
 
 async function initSongPage() {
 
@@ -176,7 +177,7 @@ function renderSettings() {
         <p>
             <button onclick="changeKey(-2)">-2</button>
             <button onclick="changeKey(-1)">-1</button>`
-			+  let a = (TRANSPOSE > 0) ? TRANSPOSE : TRANSPOSE; +
+			+ transposedValue +
             `<button onclick="changeKey(1)">+1</button>
             <button onclick="changeKey(2)">+2</button>
             <button onclick="resetKey()">Reset</button>
