@@ -176,6 +176,7 @@ function renderSettings() {
         <p>
             <button onclick="changeKey(-2)">-2</button>
             <button onclick="changeKey(-1)">-1</button>
+			<div>TRANSPOSE</div>
             <button onclick="changeKey(1)">+1</button>
             <button onclick="changeKey(2)">+2</button>
             <button onclick="resetKey()">Reset</button>
