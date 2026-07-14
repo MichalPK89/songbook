@@ -2,7 +2,6 @@ let song = '';
 let formats = [0, 1, 2, 3]
 let format = formats[0];
 let TRANSPOSE = 0;
-let transposedValue = (TRANSPOSE > 0) ? '+' + TRANSPOSE : TRANSPOSE;
 
 async function initSongPage() {
 
@@ -172,6 +171,8 @@ function toggleChords() {
 
 
 function renderSettings() {
+
+	let transposedValue = (TRANSPOSE > 0) ? '+' + TRANSPOSE : TRANSPOSE;
 
     document.getElementById("settings").innerHTML = `
         <p>
