@@ -173,7 +173,7 @@ function toggleChords() {
 function renderSettings() {
 
 	let transposeSign = (TRANSPOSE > 0) ? '+' : (TRANSPOSE == 0)? '&nbsp' : '';
-	let transposeShow = TRANSPOSE == 0)? '&nbsp' : '';
+	let transposeShow = (TRANSPOSE == 0)? '&nbsp' : '';
 
     document.getElementById("settings").innerHTML = `
         <p>
