@@ -173,12 +173,13 @@ function toggleChords() {
 function renderSettings() {
 
 	let transposeSign = (TRANSPOSE > 0) ? '+' : (TRANSPOSE == 0)? '&nbsp' : '';
+	let transposeShow = TRANSPOSE == 0)? '&nbsp' : '';
 
     document.getElementById("settings").innerHTML = `
         <p>
             <button onclick="changeKey(-2)">-2</button>
             <button onclick="changeKey(-1)">-1</button>`
-			+` ${transposeSign}${TRANSPOSE} ` +
+			+` ${transposeSign}${transposeShow} ` +
             `<button onclick="changeKey(1)">+1</button>
             <button onclick="changeKey(2)">+2</button>
             <button onclick="resetKey()">Reset</button>
