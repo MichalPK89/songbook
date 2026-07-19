@@ -65,6 +65,17 @@
     "video": "https://www.youtube.com/watch?v=NfxFe8KQZSA&list=RDNfxFe8KQZSA&start_radio=1"
   },
 
+   "navzdy": {
+    "title": "Navždy (pre Kláru a Miška)",
+    "performer": "Káčko",
+    "music": "Katarína Paukeje & Michal Miškovič",
+    "lyrics": "Katarína Paukeje",
+    "genre": "pop",
+    "usage": ["svadba"],
+    "topic": ["láska"],
+    "video": ""
+  },
+
   "obeta_srdca": {
     "title": "Obeta srdca",
     "performer": "Richard Čanaky",
