@@ -1,4 +1,4 @@
-Predohra: [D]  [D/F#]     [G]     [D]   [D/F#]     [G]  [A] 
+Predohra: [D]   [D/F#]     [G]  [A] 
 
 1. Skôr než [D]krídla rozprestriem, [D/F#]do nového dňa,
 [G]zdá sa, budeš môj, a ja budem tvo[A]ja
@@ -8,7 +8,7 @@ Predohra: [D]  [D/F#]     [G]     [D]   [D/F#]     [G]  [A]
 Čo sa [G]zdalo vzdialené je náhle [Hm]živé a prítom[A]né
 [G]Všetky tvoje [Em]cesty sú tak [A]nádherné
 
-Medzihra: [D]  [D/F#]     [G]     [D]   [D/F#]     [G]  [A] 
+Medzihra: [D]   [D/F#]     [G]  [A] 
 
 2. Ten, čo [D]stvoril túto zem, je [D/F#]ten čo stvoril nás
 [G]Ukázal nám tvár a dal nám všetok [A]čas,
@@ -29,7 +29,7 @@ Prebu[F#m7]díme svet zo spánku -
 
 R: [E]Pane daj nám lásku, čo vytr[D]vá, čo [C#m]nezávi[A]dí a [E]nie je [H]sebecká
 [E]Lásku, ktorá všetko znáša, je [D]trpezlivá, [C#m]pokoj[A]ná je a [E]dobroti[H]vá
-[E]Všetko verí a všetko dúfa, [D]žije [A]z pravdy  
+[E]Všetko verí a [Emaj7]všetko dúfa, [D]žije [A]z pravdy  
 [C#m]a keď všetko [A]zmĺkne
 Ona [H]zostáva tu s nami navždy 
 
@@ -37,6 +37,6 @@ Ona [H]zostáva tu s nami navždy
 (Ó, navždy Ó, navždy)
 
 [C#m]a keď všetko [A]zmĺkne...
-Ona [H]zostáva tu s nami 
+Ona zostáva tu s nami [E]
 
 
