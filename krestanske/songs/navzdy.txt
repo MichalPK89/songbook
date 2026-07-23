@@ -33,8 +33,9 @@ R: [E]Pane daj nám lásku, čo vytr[D]vá, čo [C#m]nezávi[A]dí a [E]nie je [
 [C#m]a keď všetko [A]zmĺkne
 Ona [H]zostáva tu s nami navždy 
 
-2x [E]  [H]  [A]  [H]
-(Ó, navždy Ó, navždy)
+[E]  [H/D#]  [A/C#]  [H]
+(Ó, navždy)
+[E]  [H]  [A]  [H]
 
 [C#m]a keď všetko [A]zmĺkne...
 Ona zostáva tu s nami [E]
