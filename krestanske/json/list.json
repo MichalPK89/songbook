@@ -65,6 +65,17 @@
     "video": "https://www.youtube.com/watch?v=NfxFe8KQZSA&list=RDNfxFe8KQZSA&start_radio=1"
   },
 
+   "najkrajsie_meno": {
+    "title": "Najkrajšie meno",
+    "performer": "Marina Mesárošová",
+    "music": "Marina Mesárošová",
+    "lyrics": "Marina Mesárošová",
+    "genre": "",
+    "usage": ["prijímanie","záver"],
+    "topic": ["Ježiš"],
+    "video": ""
+  },
+
    "navzdy": {
     "title": "Navždy",
     "performer": "Káčko",
