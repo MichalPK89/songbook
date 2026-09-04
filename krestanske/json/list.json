@@ -109,6 +109,17 @@
     "video": "https://www.youtube.com/watch?v=IzM92NtNHGk"
   },
 
+  "pucik": {
+    "title": "Púčik",
+    "performer": "Kapucíni",
+    "music": "Ondrej Lazar Tkáč",
+    "lyrics": "Ondrej Lazar Tkáč",
+    "genre": "",
+    "usage": ["záver"],
+    "topic": ["odvaha"],
+    "video": ""
+  },
+
   "srdce_chvaly": {
     "title": "Srdce chvály (Hudba dohráva)",
     "performer": "Rieka života",
