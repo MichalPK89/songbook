@@ -262,7 +262,7 @@ function buildCopyText(song) {
 
         result += lyricLine.join("") + "\n"
     }
-
+	document.getElementById("song").innerHTML = result
     return result
 }
 
