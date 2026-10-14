@@ -54,6 +54,7 @@ function drawSong(){
 	}
 }
 
+// separate lyrics and chords
 
 function parseLine(line, withChords = true) {
 
@@ -94,6 +95,8 @@ function parseLine(line, withChords = true) {
 
 const NOTES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "B", "H"]
 
+// transposing chords
+
 function transposeChord(chord, shift) {
 
     // match root + rest (e.g. C#m7 → C# + m7)
@@ -112,8 +115,6 @@ function transposeChord(chord, shift) {
 
     return NOTES[newIndex] + suffix
 }
-
-
 
 
 function renderLine(row) {
@@ -163,6 +164,7 @@ function renderLine1(row) {
         <div class="lyrics">${row.text || "&nbsp;"}</div>
     </div>`
 }
+
 
 function changeKey(step) {
     TRANSPOSE += step
