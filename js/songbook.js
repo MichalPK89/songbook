@@ -44,7 +44,7 @@ function drawSong(){
 			renderSong(song);
 			break;
 		case 1:
-			toggleChords();
+			renderSong1(song);
 			break;
 		case 2:
 			toggleChords();
@@ -259,6 +259,18 @@ function renderSong(song) {
         html += renderLine(parsed)
     }
 
+    document.getElementById("song").innerHTML = html
+}
+
+
+
+function renderSong1(song) {
+
+    let lines = song.split("\n")
+    let html = ""
+
+	
+   
     document.getElementById("song").innerHTML = html
 }
 
