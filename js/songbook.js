@@ -273,9 +273,9 @@ function renderSong1(song) {
 
     for (let line of lines) {
 
-        
+        let parsed = parseLine(line, showChords)
 
-        html += line
+        html += renderLine(parsed)
     }
    
     document.getElementById("song").innerHTML = html
