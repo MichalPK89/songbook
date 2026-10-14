@@ -139,6 +139,31 @@ function renderLine(row) {
     </div>`
 }
 
+
+
+function renderLine1(row) {
+
+    row.chords = row.chords || []
+
+    let chordsHTML = ""
+
+    for (let chord of row.chords) {
+
+        let newChord = transposeChord(chord.name, TRANSPOSE)
+
+        chordsHTML += `
+        <span class="chord" style="left:${chord.pos}ch">
+            ${newChord}
+        </span>`
+    }
+
+    return `
+    <div class="line ${row.chords.length ? "has-chords" : "no-chords"}">
+        ${row.chords.length ? `<div class="chords">${chordsHTML}</div>` : ""}
+        <div class="lyrics">${row.text || "&nbsp;"}</div>
+    </div>`
+}
+
 function changeKey(step) {
     TRANSPOSE += step
     renderSong(song)
