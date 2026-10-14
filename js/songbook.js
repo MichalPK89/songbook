@@ -293,20 +293,6 @@ function renderSong(song) {
 
 
 
-function renderSong1(song) {
-
-    let lines = song.split("\n")
-    let html = ""
-
-    for (let line of lines) {
-
-        let parsed = parseLine(line, showChords)
-
-        html += renderLine(parsed)
-    }
-   
-    document.getElementById("song").innerHTML = html
-}
 
 <!-- pridaj info -->
 
