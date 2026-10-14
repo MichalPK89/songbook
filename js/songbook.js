@@ -89,6 +89,41 @@ function parseLine(line, withChords = true) {
     return { text, chords }
 }
 
+function parseLine1(line, withChords = true) {
+
+    let chords = []
+    let text = ""
+    let pos = 0
+
+    for (let i = 0; i < line.length; i++) {
+
+        if (line[i] === "[") {
+
+            let end = line.indexOf("]", i)
+            let raw = line.slice(i + 1, end)
+
+            if (withChords) {
+                let parts = raw.split(" ").filter(x => x)
+
+                for (let p of parts) {
+                    chords.push({
+                        name: p,
+                        pos: pos
+                    })
+                }
+            }
+
+            i = end
+        } else {
+            text += line[i]
+            pos++
+        }
+    }
+
+    return { text, chords }
+}
+
+
 
 const NOTES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "B", "H"]
 
@@ -269,7 +304,12 @@ function renderSong1(song) {
     let lines = song.split("\n")
     let html = ""
 
-	
+    for (let line of lines) {
+
+        
+
+        html += line
+    }
    
     document.getElementById("song").innerHTML = html
 }
