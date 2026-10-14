@@ -44,7 +44,7 @@ function drawSong(){
 			renderSong(song);
 			break;
 		case 1:
-			renderSong1(song);
+			buildCopyText(song);
 			break;
 		case 2:
 			toggleChords();
