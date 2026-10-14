@@ -3,6 +3,8 @@ let formats = [0, 1, 2, 3]
 let format = formats[0];
 let TRANSPOSE = 0;
 
+// init song page
+
 async function initSongPage() {
 
     const params = new URLSearchParams(location.search);
@@ -37,6 +39,7 @@ async function initSongPage() {
     drawSong();
 }
 
+// Draw song based on format
 
 function drawSong(){
 	switch(format){
@@ -116,6 +119,7 @@ function transposeChord(chord, shift) {
     return NOTES[newIndex] + suffix
 }
 
+// render Line
 
 function renderLine(row) {
 
@@ -142,29 +146,7 @@ function renderLine(row) {
 
 
 
-function renderLine1(row) {
-
-    row.chords = row.chords || []
-
-    let chordsHTML = ""
-
-    for (let chord of row.chords) {
-
-        let newChord = transposeChord(chord.name, TRANSPOSE)
-
-        chordsHTML += `
-        <span class="chord" style="left:${chord.pos}ch">
-            ${newChord}
-        </span>`
-    }
-
-    return `
-    <div class="line ${row.chords.length ? "has-chords" : "no-chords"}">
-        ${row.chords.length ? `<div class="chords">${chordsHTML}</div>` : ""}
-        <div class="lyrics">${row.text || "&nbsp;"}</div>
-    </div>`
-}
-
+// chord transposing
 
 function changeKey(step) {
     TRANSPOSE += step
@@ -179,6 +161,9 @@ function resetKey() {
 }
 
 let showChords = true;
+
+
+// Change song format
 
 function formatChange() {
 	if (format< formats.length-1){
@@ -198,6 +183,8 @@ function toggleChords() {
     /*renderTransposer()*/
 }
 
+
+//render settings
 
 function renderSettings() {
 
@@ -223,7 +210,7 @@ function renderSettings() {
 
 
 
-
+// Build Copy Text
 
 function buildCopyText(song) {
 
@@ -267,6 +254,7 @@ function buildCopyText(song) {
 }
 
 
+// Copy Song
 
 function copySong() {
 
@@ -275,6 +263,8 @@ function copySong() {
     navigator.clipboard.writeText(text)
 }
 
+
+// RenderSong
 
 function renderSong(song) {
 
