@@ -89,39 +89,6 @@ function parseLine(line, withChords = true) {
     return { text, chords }
 }
 
-function parseLine1(line, withChords = true) {
-
-    let chords = []
-    let text = ""
-    let pos = 0
-
-    for (let i = 0; i < line.length; i++) {
-
-        if (line[i] === "[") {
-
-            let end = line.indexOf("]", i)
-            let raw = line.slice(i + 1, end)
-
-            if (withChords) {
-                let parts = raw.split(" ").filter(x => x)
-
-                for (let p of parts) {
-                    chords.push({
-                        name: p,
-                        pos: pos
-                    })
-                }
-            }
-
-            i = end
-        } else {
-            text += line[i]
-            pos++
-        }
-    }
-
-    return { text, chords }
-}
 
 
 
