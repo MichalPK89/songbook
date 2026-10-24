@@ -6,7 +6,7 @@ R: Vždyť víš, že [C]voda se [D]neuto[G]pí, [Am]plamínek [Fmaj7]nespá[G]l
 [C]lávky jdou [D]přes příko[G]py, [Am]proč bychom [Fmaj7]se  bál[G]i,
 [Am]vítr se [Em]nezadu[Gm]sí, dálka se [F]nevzdálí,
 jsem vždycky [F6]tam, kde ty [C]jsi,
-[: proč bychom [Fmaj7]se bá[C]li? :]
+|: proč bychom [Fmaj7]se bá[C]li? :|
 
 2. Napsal jsem ti písničku, aby sis byla jistá,
 napsal jsem ti písničku, že jsi moje jediná,
@@ -19,4 +19,4 @@ lávky jdou přes příkopy, proč bychom se báli,
 vítr se nezadusí, dálka se nevzdálí,
 jsem vždycky tam, kde ty jsi,
                                  
-[: proč bychom se báli, :] proč bychom [Fmaj7]se bá[C]li?
+|: proč bychom se báli, :| proč bychom [Fmaj7]se bá[C]li?
