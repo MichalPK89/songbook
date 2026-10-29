@@ -63,7 +63,7 @@ function parseLine(line, Chords = true, Lyrics = true) {
   let array = []
   let chords = ""
   let text = ""
-  let sections = a.match(/\[[^\]]*\]|[^\[\]]+/g)
+  let sections = line.match(/\[[^\]]*\]|[^\[\]]+/g)
 
   for (const [index, p] of sections.entries()){
      
