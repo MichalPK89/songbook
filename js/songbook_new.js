@@ -111,7 +111,7 @@ function parseLine(line, Chords = true, Lyrics = true) {
     chordsSpaces = Math.abs(chords.length - text.length)
     textSpaces = Math.abs(Math.max(chords.lastIndexOf(" "),-1) - text.length + 1);
   /* Pridaj hodnotu do akordov a textu*/
-    if(separateChordArray[i].isBass){chords += "/"  + separateChordArray[i].name}
+    if(separateChordArray[i].isBass){chords += "/"  + separateChordArray[i].name};
     if (separateChordArray[i].isChord && separateChordArray[i-1].isChord){chords += " "  + separateChordArray[i].name}
     else if (separateChordArray[i].isChord) {
       chords += " ".repeat(chordsSpaces) + separateChordArray[i].name} 
