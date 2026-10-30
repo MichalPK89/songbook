@@ -126,7 +126,8 @@ function parseLine(line) {
   
     }
 
-  
+  console.log(chords);
+	console.log(text);
   return {chords, text}
 
 }
