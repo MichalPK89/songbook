@@ -65,6 +65,17 @@
     "video": "https://www.youtube.com/watch?v=I8uGoeXBGBY&t=1s"
   },
 
+  "jedine_s_laskou": {
+    "title": "Jedine s láskou",
+    "performer": "Richard Čanaky",
+    "music": "Richard Čanaky",
+    "lyrics": "Richard Čanaky",
+    "genre": "pop-rock",
+    "usage": ["záver"],
+    "topic": ["Láska"],
+    "video": "https://www.youtube.com/watch?v=RnD2I5C_vXQ"
+  },
+
   "jezis_ty_si_ma_poznal": {
     "title": "Ježiš Ty si ma poznal",
     "performer": "Drahomíra Ďuračková, Mária Wiesnerová",
