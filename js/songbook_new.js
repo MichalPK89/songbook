@@ -76,6 +76,8 @@ function parseLine(line) {
         isChord: (p.substring(0,1) === "[")
       })
   }
+
+ console.log(array);
   // rozdeľ akordy, ak sú na jednej pozícií
   separateChordArray = array.flatMap(item => {
       if (item.isChord) {
