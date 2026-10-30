@@ -9,7 +9,7 @@ body {
 }
 
 .chords {
-  position: absolute;
+  position: relative;
 }
 
 .chord {
