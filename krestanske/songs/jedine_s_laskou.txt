@@ -1,4 +1,4 @@
-predohra: [E]   [H]   [C#mi]   [A]
+predohra: [E]   [H]   [C#m]         [A]
 
 1. Keby mi hlas ako anjel znel,
 keby som bol prorok veľkých diel.
@@ -16,7 +16,7 @@ Keby som každý deň v chráme bol,
 bez lásky som iba plný slov, plný slov, plný slov,
 [H]plný slov
 
-R |: [E]Jedine [H]s láskou, [c#]jedine [A]s láskou,
+R |: [E]Jedine [H]s láskou, [C#m]jedine [A]s láskou,
 jedine Ježiš ti dáva, dáva, dáva lásku, tak poď! :|
 
 4. Keby som mal v sebe veľa snov,
