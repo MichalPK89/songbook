@@ -292,7 +292,7 @@ function copySong() {
 // RenderSong
 
 function renderSong(song) {
-
+	console.log(song);
     let lines = song.split("\n")
     let html = ""
 
