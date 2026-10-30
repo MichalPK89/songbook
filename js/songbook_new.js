@@ -64,7 +64,7 @@ function parseLine(line) {
   let chords = ""
   let text = ""
   let sections = line.match(/\[[^\]]*\]|[^\[\]]+/g) || [];
-	console.log("sections:"&sections);
+	console.log("sections:" + sections);
 
 
 
@@ -77,7 +77,7 @@ function parseLine(line) {
       })
   }
 
- console.log("array" &array);
+ console.log("array" + array);
   // rozdeľ akordy, ak sú na jednej pozícií
   separateChordArray = array.flatMap(item => {
       if (item.isChord) {
@@ -126,8 +126,8 @@ function parseLine(line) {
   
     }
 
-  console.log("chords"&chords);
-	console.log("text"&text);
+  console.log("chords" + chords);
+	console.log("text" + text);
   return {chords, text}
 
 }
