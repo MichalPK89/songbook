@@ -10,10 +10,6 @@ body {
 
 .chords {
   position: relative;
-}
-
-.chord {
-  position: absolute;
   font-weight: bold;
   white-space: nowrap;
   color:#C000C0;
