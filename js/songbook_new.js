@@ -63,7 +63,7 @@ function parseLine(line) {
   let array = []
   let chords = ""
   let text = ""
-  let sections = line.match(/\[[^\]]*\]|[^\[\]]+/g)
+  let sections = line.match(/\[[^\]]*\]|[^\[\]]+/g) || [];
 	console.log(sections);
 
 
