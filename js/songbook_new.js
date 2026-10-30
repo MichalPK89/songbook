@@ -59,7 +59,7 @@ function drawSong(){
 
 // separate lyrics and chords
 
-function parseLine(line, Chords = true, Lyrics = true) {
+function parseLine(line) {
   let array = []
   let chords = ""
   let text = ""
