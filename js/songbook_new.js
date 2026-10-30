@@ -167,7 +167,7 @@ function renderLine(row) {
 
     return `
     <div class="line">
-        ${row.chords.length ? `<div class="chords">${row.chords || "&nbsp;"}</div>` : ""}
+        <div class="chords">${row.chords || "&nbsp;"}</div>
         <div class="lyrics">${row.text || "&nbsp;"}</div>
     </div>`
 }
