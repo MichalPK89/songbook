@@ -8,18 +8,8 @@ body {
   font-family: monospace;
 }
 
-.line.has-chords {
-  margin-top: 1.2em;
-  margin-bottom: 0.2em;
-}
-
-.line.no-chords {
-  margin-bottom: 0.2em;
-}
-
 .chords {
   position: absolute;
-  top: -1em;
 }
 
 .chord {
