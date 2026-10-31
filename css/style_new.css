@@ -6,13 +6,13 @@ body {
 .line {
   position: relative;
   font-family: monospace;
-  white-space: pre-wrap;
-}
+  }
 
 .chords {
   position: relative;
   font-weight: bold;
   color:#C000C0;
+  white-space: pre-wrap;
 }
 
 .hide-chords .chords {
@@ -21,6 +21,7 @@ body {
 
 .lyrics {
   position: relative;
+  white-space: pre-wrap;
 }
 
 #title {
