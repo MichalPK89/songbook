@@ -6,7 +6,7 @@ body {
 .line {
   position: relative;
   font-family: monospace;
-  white-space: pre;
+  /* white-space: pre;*/
 }
 
 .chords {
