@@ -6,12 +6,12 @@ body {
 .line {
   position: relative;
   font-family: monospace;
+  white-space: pre;
 }
 
 .chords {
   position: relative;
   font-weight: bold;
-  white-space: nowrap;
   color:#C000C0;
 }
 
@@ -21,7 +21,6 @@ body {
 
 .lyrics {
   position: relative;
-  /*white-space: pre;*/
 }
 
 #title {
