@@ -20,3 +20,7 @@ th {
   background-color: #76BACF;
   color: white;
 }
+
+span.inline {
+  display: inline-block;
+}
