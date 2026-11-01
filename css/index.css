@@ -26,5 +26,5 @@ span.inline {
 }
 
 span.right {
-  right: auto;
+  text-align: right
 }
