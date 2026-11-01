@@ -1,5 +1,5 @@
-predohra:[A]   [G/A]     [A]   [G/A]
- [A]   [G/A]     [A] 
+predohra: [A G/A A G/A]
+ [A G/A A] 
 
 1. [A]Filoso[G/A]fem [A]člověk se [G/A]stane,
 [A]jen když to [G/A]dělá [F#m]fortel[Em7]ně,
