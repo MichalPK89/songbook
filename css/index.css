@@ -24,3 +24,7 @@ th {
 span.inline {
   display: inline-block;
 }
+
+span.right {
+  right: auto;
+}
