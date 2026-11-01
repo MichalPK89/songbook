@@ -119,7 +119,7 @@ function parseLine(line) {
     if(separateChordArray[i].isBass){chords += "/"  + separateChordArray[i].name}
     else if (i > 0 && separateChordArray[i].isChord && separateChordArray[i-1].isChord){chords += " "  + separateChordArray[i].name}
     else if (separateChordArray[i].isChord) {
-      chords += " ".repeat(chordsSpaces) + separateChordArray[i].name} 
+      chords += " ".repeat(Math.max(chordsSpaces,1)) + separateChordArray[i].name} 
     else 
     {text += " ".repeat(textSpaces) + separateChordArray[i].name}
 
