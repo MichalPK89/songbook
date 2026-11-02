@@ -21,10 +21,8 @@ th {
   color: white;
 }
 
-span.inline {
-  display: inline-block;
-}
-
-span.right {
-  text-align: right
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
