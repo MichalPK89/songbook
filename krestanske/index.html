@@ -15,13 +15,11 @@
 
   <div class="container">
   <div><input type="text" id="filter" onkeyup="filterTable()" placeholder="Vyhľadávanie" title="Type in a name"></div>
+  <div><button onclick="downloadOffline('krestanske')">Stiahnuť offline</button></div>
   <div><a href="https://michalpk89.github.io/songbook/spevniky.html">Spevníky</a></div>
     </div>
   <br>
-
-  <button onclick="downloadOffline('krestanske')">
-    Stiahnuť offline
-  </button>
+ 
 
 <script>
   let index = "json/list.json";
