@@ -239,55 +239,11 @@ function renderSettings() {
 
 
 
-// Build Copy Text
-
-function buildCopyText(song) {
-
-    let lines = song.split("\n")
-    let result = ""
-
-    for (let line of lines) {
-
-        let parsed = parseLine(line)
-
-        let chordLine = []
-        let lyricLine = parsed.text.split("")
-
-        // build chord line with spacing
-        for (let chord of parsed.chords) {
-
-            let name = transposeChord(chord.name, TRANSPOSE)
-
-            for (let i = 0; i < name.length; i++) {
-                chordLine[chord.pos + i] = name[i]
-            }
-        }
-
-        // fill empty spaces
-        let maxLen = Math.max(lyricLine.length, chordLine.length)
-
-        for (let i = 0; i < maxLen; i++) {
-            if (!chordLine[i]) chordLine[i] = " "
-            if (!lyricLine[i]) lyricLine[i] = " "
-        }
-
-        // add both lines
-        if (parsed.chords.length > 0) {
-            result += chordLine.join("") + "\n"
-        }
-
-        result += lyricLine.join("") + "\n"
-    }
-	document.getElementById("song").innerHTML = result
-    return result
-}
-
-
 // Copy Song
 
 function copySong() {
 
-    let text = buildCopyText(song)
+    let text = renderSong(song);
 
     navigator.clipboard.writeText(text)
 }
