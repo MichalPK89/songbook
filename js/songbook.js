@@ -253,7 +253,7 @@ function copySong(song) {
         html += renderLine(parsed)
     }
 
-    navigator.clipboard.writeText(html)
+    navigator.clipboard.writeText("test")
 }
 
 
