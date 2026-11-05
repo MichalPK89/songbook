@@ -241,11 +241,19 @@ function renderSettings() {
 
 // Copy Song
 
-function copySong() {
+function copySong(song) {
 
-    let text = renderSong(song);
+    let lines = song.split("\n")
+    let html = ""
 
-    navigator.clipboard.writeText(text)
+    for (let line of lines) {
+
+        let parsed = parseLine(line, showChords)
+
+        html += renderLine(parsed)
+    }
+
+    navigator.clipboard.writeText(html)
 }
 
 
