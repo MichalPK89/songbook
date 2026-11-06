@@ -1,24 +1,16 @@
-1. [C#mi]V dobrom aj v zlom budeš moja,
-[H]rany tie sa [G#]s tebou zhoja.
-[A]Keď je [H]slnko, [E]keď je [F#m]zima,
-[Gdim]ty si [G#7]moja [C#mi]domo-[H]vina.
+1. [C#mi]V dobrom aj v zlom budeš moja, [H]rany tie sa [G#]s tebou zhoja.
+[A]Keď je [H]slnko, [E]keď je [F#m]zima, [Gdim]ty si [G#7]moja [C#mi]domo-[H]vina.
 
-R: [E]Hej, hej, hej, hej, sokoly,
-[H]z výšky hľadia na to všetko, [G#]čo nás bolí.
-[A]Zvoň, [H]zvoň, [E]zvoň nad kra[F#m]jinou,
-[A]rozlie[G#7]haj sa [C#mi]letom, [H]zimou.
-
-[E]Hej, hej, hej, hej, sokoly,
-[H]z výšky hľadia na to všetko, [G#7]čo nás bolí.
-[A]Zvoň, [H]zvoň, [E]zvoň nad kra[F#m]jinou,
-[D#7b9]rozlie[G#7]haj sa, [C#mi]zvoň, [G#]zvoň, [C#mi]zvoň!  
+R: [E]Hej, hej, hej, hej, sokoly, [H]z výšky hľadia na to všetko, [G#]čo nás bolí.
+[A]Zvoň, [H]zvoň, [E]zvoň nad kra[F#m]jinou, [A]rozlie[G#7]haj sa [C#mi]letom, [H]zimou.
+[E]Hej, hej, hej, hej, sokoly, [H]z výšky hľadia na to všetko, [G#7]čo nás bolí.
+[A]Zvoň, [H]zvoň, [E]zvoň nad kra[F#m]jinou, [D#7b9]rozlie[G#7]haj sa,
+[C#mi]zvoň, [G#]zvoň, [C#mi]zvoň!  
 
 prechod
 
-2. Láska moja, kraj môj drahý,
-tu sme boli chlapci malí.
-Raz ma nájdeš pod tou hlinou,
-letia vtáci nad krajinou.
+2. Láska moja, kraj môj drahý,tu sme boli chlapci malí.
+Raz ma nájdeš pod tou hlinou, letia vtáci nad krajinou.
 
 R:
 
@@ -29,10 +21,8 @@ R:
 [Gdim]...     [G#7]..     [C#mi] ...  [H]...
 
 
-3. Hej, des tam, de čorni vody,
-siv na koňa kozak molody.
-Plače moloda divčina,
-ide kozak z Ukrajiny.
+3. Hej, des tam, de čorni vody, siv na koňa kozak molody.
+Plače moloda divčina, ide kozak z Ukrajiny.
 
 R:
 
