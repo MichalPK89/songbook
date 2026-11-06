@@ -117,7 +117,7 @@ function parseLine(line) {
     textSpaces = Math.abs(Math.max(chords.lastIndexOf(" "),-1) - text.length + 1);
   /* Pridaj hodnotu do akordov a textu*/
 	if (i == 0 && separateChordArray[i].isChord == false && /^(?:\p{Lu}+|\d+)[.:]\s*/u.test(separateChordArray[i].name)){
-		text += "<b>"+separateChordArray[i].name.substring(0, separateChordArray[i].name.search(/[:.]/))+"</b>"+separateChordArray[i].name.slice(separateChordArray[i].name.search(/[:.]/));
+		text += "<b>"+separateChordArray[i].name.substring(0, separateChordArray[i].name.search(/[:.]/)+1)+"</b>"+separateChordArray[i].name.slice(separateChordArray[i].name.search(/[:.]/)+1);
 		chords += "<b></b>"
 	}
 	else if (i == 0 && separateChordArray[i].isChord){chords += separateChordArray[i].name} 
