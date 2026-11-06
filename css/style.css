@@ -12,7 +12,7 @@ body {
   position: relative;
   font-weight: bold;
   color:#C000C0;
-  white-space: no-wrap;
+  white-space: pre-wrap;
 }
 
 .hide-chords .chords {
@@ -21,7 +21,7 @@ body {
 
 .lyrics {
   position: relative;
-  white-space: no-wrap;
+  white-space: pre-wrap;
 }
 
 #title {
