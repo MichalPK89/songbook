@@ -13,11 +13,7 @@ Raz ma nájdeš pod tou hlinou, letia vtáci nad krajinou.
 
 R:
 
-2x
-[E]Naaa... .. ... ..
-[H]... ..  ...  [G#]...
-[A]... [H].. [E]...[F#m]..
-[Gdim]...     [G#7]..     [C#mi] ...  [H]...
+[E]Naaa [H G#]   [A H E F#m]   [Gdim G#7 C#mi H]     [E]Naaa [H G#]   [A H E F#m]   [Gdim]
 
 
 3. Hej, des tam, de čorni vody, siv na koňa kozak molody.
