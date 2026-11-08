@@ -1,13 +1,13 @@
-predohra: [C]  [Am7]     [G]   [F]        [C]   [Am7]    [G]  [F]
+predohra: 2x [C Am7 G F]      
 
 1. [C]Hladný prichá[Am7]dzam a viem, že [G]ty ma nasý[F]tiš.
 [C]Hoc som prázdny, tvoj [Am7]príval lásky [G]smäd môj uha[F]sí.
 
-medzihra
+I: 2x [C Am7 G F] 
 
-1.
+1. Hladný prichádzam...
 
-Ča[G]kám Ťa, [F/A]príď, ča[G/H]kám Ťa, [F]príď!
+PR: Ča[G]kám Ťa, [F/A]príď, ča[G/H]kám Ťa, [F]príď!
 
 R: Pa[C]dám na kole[Fmaj]ná a [C]dávam to, čo [Fmaj]mám,
 si [C]všetkým Ježiš, čo [Fmaj]pre mňa zmysel [C]má.
@@ -15,6 +15,6 @@ si [C]všetkým Ježiš, čo [Fmaj]pre mňa zmysel [C]má.
 2. [C]Bežím k tebe [Am7]zlomený, ty [G]náruč otvá[F]raš.
 [C]Ustatý som, [Am7]dotyk tvoj však [G]silu novú [F]dá.
 
-2x Čakám ťa príď...
+PR: 2x
 
-2x R:
+R: 2x
