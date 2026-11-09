@@ -5,12 +5,12 @@ I: |: [Dm7 G6] :|
 
 PR: [F]Jen co noha [Eb]nohu [B]mine, [F]jen co noha [Eb]nohu [B]mine.
 
-R: |: [F]Jen co noha nohu mine, [Eb]pomalá [B]chůze, [F]je to zdravý [B]a není to těžký,
-[F]jen co noha nohu mine, [Eb]pomalá [B]chůze, [F]ode dneška [B]budu chodit pěšky :|
-
+R: [F]Jen co noha nohu mine, [Eb]pomalá [B]chůze, [F]je to zdravý [B]a není to těžký,
+[F]jen co noha nohu mine, [Eb]pomalá [B]chůze, [F]ode dneška [B]budu chodit pěšky
+R:
 X: [C]Konečně - co by ne, [Dm]všechno bude [Gm7]ji[C]né, [Gm7]jen co noha [F/A]nohu, jen co [B]noha nohu [C]mine.
-
 R: 
+
 I: |: [Dm7 G6] :|
 
 2. Naposled se vyspím v povlečení čistém, z počítače mažu operační systém,
