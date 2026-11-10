@@ -3,7 +3,7 @@
 [F]kdy[Dm7]by  [C]jsi [G]se [Dm7]pous[C]má[G]la, [B]to [F]by [C]jsi [G]mě [Dm7]potěši[G]la.
 
 R: Vždyť víš, že [C]voda se [D]neuto[G]pí, [Am]plamínek [Fmaj7]nespá[G]lí,
-[C]lávky jdou [D]přes příko[G]py, [Am]proč bychom [Fmaj7]se  bál[G]i,
+[C]lávky jdou [D]přes příko[G]py, [Am]proč bychom [Fmaj7]se bál[G]i,
 [Am]vítr se [Em]nezadu[Gm]sí, dálka se [F]nevzdálí,
 jsem vždycky [F6]tam, kde ty [C]jsi,
 |: proč bychom [Fmaj7]se bá[C]li? :|
@@ -19,4 +19,4 @@ lávky jdou přes příkopy, proč bychom se báli,
 vítr se nezadusí, dálka se nevzdálí,
 jsem vždycky tam, kde ty jsi,
                                  
-|: proč bychom se báli, :| proč bychom [Fmaj7]se bá[C]li?
+|: proč bychom se báli :| proč bychom [Fmaj7]se bá[C]li?
