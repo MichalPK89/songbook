@@ -1,6 +1,6 @@
-I: 4x |: [C#m A H G#m ] :|  [C#m C#m]
+I: 12x |: [C#m A H G#m ] :|  [C#m C#m]
 
-[C#m]Vieš že nemám rád [G#m]hru na cestu [F#m]hore schodmi, [C#m]radšej budem stáť [G#m]na koncertoch	[F#m]svojich rodných
+1. [C#m]Vieš že nemám rád [G#m]hru na cestu [F#m]hore schodmi, [C#m]radšej budem stáť [G#m]na koncertoch	[F#m]svojich rodných
 [A]Vždy sám seba [H]nájsť, [A]to je to umenie [H]žiť
 Vieš že nechcem mať to čo chcú mať všetci snobi stačí malý skrat, ten aj z mála zázrak robí
 Vždy sám seba nájsť to je to umenie žiť
@@ -8,10 +8,14 @@ Vždy sám seba nájsť to je to umenie žiť
 
 R: [C#m]V život[A]ných búrkach [H]rásť vie len [G#m]správny [C#m]chlap, to je [A]môj nepo[H]koj tak ma [G#m]stále [C#m]cháp
 zabud[A]ni na drob[H]né mince [G#m]hriechov [F#m]v nás
-C#m	A	H	G#m
-Vieš že nemám rád frajerov čo všetko vedia v pózach drieme had klamať telom nieje veda Vždy sám seba nájsť to je to umenie žiť dívať sa priamo do očí zlým aj dobrým dobrým aj zlým...
-2 x Ref: v životných búrkach rásť vie len správny chlap to je môj nepokoj tak ma stále cháp zabudni na drobné mince hriechov v nás
-|: A	H	:]
-|: C#m G#m	F#m A	H	:|
-1 x Ref. ženský
-Ref, ref, ref, ref, ref...
+
+I: 4x |: [C#m A H G#m ] :|
+
+2. Vieš že nemám rád frajerov čo všetko vedia, v pózach drieme had, klamať telom nie je veda.
+Vždy sám seba nájsť to je to umenie žiť dívať sa priamo do očí zlým aj dobrým dobrým aj zlým...
+
+R: 2x v životných búrkach rásť vie len správny chlap to je môj nepokoj tak ma stále cháp zabudni na drobné mince hriechov v nás
+|: [A	H] :|     |: [C#m G#m F#m A H]	:|
+
+R2: (ženský): v živo[C#m]tných búrkach [G#m]rásť vie len [F#m]správny chlap, [A H] to je [C#m]môj nepo[G#m]koj tak ma [F#m]stále cháp [A H]
+R2: 4x ( + mužský hlas)
