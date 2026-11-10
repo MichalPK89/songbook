@@ -110,6 +110,16 @@
     "video": "https://www.youtube.com/watch?v=LZsidq2oB3w"
   },
 
+   "tereza": {
+    "title": "Tereza",
+    "performer": "Waldemar Matuška",
+    "music": "Jiří Šlitr",
+    "lyrics": "Jiří Suchý",
+    "genre": "",
+    "language": "cz",
+    "video": "https://www.youtube.com/watch?v=5NfJijz5crQ"
+  },
+
   "test": {
     "title": "Testovanie",
     "performer": "",
