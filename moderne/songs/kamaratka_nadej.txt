@@ -1,10 +1,10 @@
 I: 4x |: [Am Em F C Dmi G Am] :| [Am Am]
 
 1. [Am]Kama[Em]rátka [F]Ná[C]dej [Dm]baterky mám [G]vypále[C]né [G]
-[Am]moja [Em]láska [F]má [C]dnes [Dm]jednu malú	[G]zmenu v me[Am]ne
+[Am]moja [Em]láska [F]má [C]dnes [Dm]jednu malú [G]zmenu v me[Am]ne
 Vždy sa nájde niekto kto je trochu múdrejší
 v pravej chvíli vie to, bez zábran na slnku kričí
-I: 2x |: Am Em F C Dmi G Am :| 
+I: 2x |: [Am Em F C Dmi G Am] :| 
 
 2. Kamarátka Nádej dnes je vo mne vypredané
 Voľnosť v očiach nájde, tunel s názvom zabúdanie
