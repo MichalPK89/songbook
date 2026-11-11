@@ -8,9 +8,9 @@ R2: [D]Teraz [Am]ja a môj dom [C]chceme [G]slúžiť
 
 I: |: [G C D G] :|
 
-R: Dnes [G]viem, že [C]chcem...
+R1: Dnes [G]viem, že [C]chcem...
 
-R2: 2x 
+R2: 2x Teraz ja...
 
 B: [Am]Nádherný [Em]Radca náš [C]Otec neko[D]nečný
 Pán [Am]zástupov, [Em]večný kráľ, za [C]tebou chceme [D]kráčať.
