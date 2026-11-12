@@ -110,6 +110,17 @@
     "video": "https://www.youtube.com/watch?v=yuaa5lYTREk"
   },
 
+  "krok_sem_krok_tam": {
+    "title": "Krok sem, krok tam",
+    "performer": "Spievankovo",
+    "music": "tradicionál",
+    "lyrics": "tradicionál",
+    "genre": "detská ukazovačka",
+    "usage": ["prijímanie","záver"],
+    "topic": ["láska"],
+    "video": "https://www.youtube.com/watch?v=tzioJ8rEFnw"
+  },
+
   "laska_co_nie_je_milovana": {
     "title": "Láska, čo nie je milovaná",
     "performer": "Kapucíni",
