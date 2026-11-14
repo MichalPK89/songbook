@@ -3,7 +3,9 @@ I: |: [G C/E D G] :|
 R1: Dnes [G]viem, že [C/E]chcem [D]za tebou [G]ísť. Dnes [G]viem, že [C/E]chcem [D]počuť tvoj [G]hlas a žiť.
 Dnes [G]viem, že [C/E]chcem [D]Ti svoje [G]áno dať. Dnes [G]viem, že [C/E]chcem [D]za tebou [G]ísť.
 
-R2: [D]Teraz [Am]ja a môj dom [C]chceme [G]slúžiť, [D]Teraz [Am]ja a môj dom [C] chceme [D4]len pre teba [D]žiť,
+R2: [D]Teraz [Am]ja a môj dom [C]chceme [G]slúžiť, [D]Teraz [Am]ja a môj dom [C] chceme [D4]len pre teba [D]žiť, už [G]dnes.
+
+Bridge ->
 
 I: |: [G C/E D G] :| (už dnes)
 
