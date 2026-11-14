@@ -1,4 +1,4 @@
-I: [A D]
+I: |: [A D] :|
 
 1. [A] Súcit nekonečný, [D2] milosťou si ty. [A] Sladkým odpustením, [D2] vernosť bez hraníc [Hm7] vo mne [A/C#]prítom[D2]ná
 Ty si Otec mocný, Kráľ, čo lieči nás. Spasiteľ si nežný, Obeť prečistá za mňa slávená
