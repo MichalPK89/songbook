@@ -221,6 +221,17 @@
     "video": "https://www.youtube.com/watch?v=Hv2PT-n6W60"
   },
 
+  "ochranca": {
+    "title": "Ochranca",
+    "performer": "Richard Čanaky",
+    "music": "Richard Čanaky",
+    "lyrics": "Richard Čanaky",
+    "genre": "",
+    "usage": ["prijímanie"],
+    "topic": ["pastier"],
+    "video": ""
+  },
+
   "privitajme_pana": {
     "title": "Privítajme Pána",
     "performer": "Tretí deň",
@@ -301,12 +312,23 @@
    "vdaka_kapucini": {
     "title": "Vďaka (Kapucíni)",
     "performer": "Kapucíni & Stanley",
-    "music": "Stano Šášky",
-    "lyrics": "Stano Šášky",
+    "music": "",
+    "lyrics": "",
     "genre": "",
     "usage": ["obetovanie"],
     "topic": ["vďaka"],
     "video": "https://www.youtube.com/watch?v=Y2EVhfbwVCg"
+  },
+
+   "vecer": {
+    "title": "Večer",
+    "performer": "Jerichove trúby",
+    "music": "Jerichove trúby",
+    "lyrics": "Jerichove trúby",
+    "genre": "pop",
+    "usage": ["prijímanie","záver"],
+    "topic": ["odpustenie","láska"],
+    "video": "https://www.youtube.com/watch?v=eb4Ddtxyp0E"
   },
 
   "vezmi_moje_srdce": {
