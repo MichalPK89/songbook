@@ -6,5 +6,9 @@
   "Bridge":{"Songbook":"B:", "OnSong":"B:"},
   "Opakovanie - začiatok":{"Songbook":"|:", "OnSong":"//:"},
   "Opakovanie - koniec":{"Songbook":":|", "OnSong":"://"},
-  "Dohra":{"Songbook":"O: (outro)", "OnSong":"Dohra:"}
+  "Dohra":{"Songbook":"O: (outro)", "OnSong":"Dohra:"},
+  "Akord":{"Songbook":"[A]", "OnSong":"[A]"},
+  "Akordy":{"Songbook":"[A D]", "OnSong":"[A][D]"},
+  "Stupnica":{"Songbook":"German (H, B)", "OnSong":"American (B, Bb)"},
+  
 }
