@@ -1,4 +1,10 @@
 {
-  "Refrén"{"Songbook":"R:", "OnSong":"R:"},
-  "Sloha"{"Songbook":"1.", "OnSong":"1."}
+  "Predohra":{"Songbook":"I: (intro)", "OnSong":"Predohra:"},
+  "Sloha":{"Songbook":"1.", "OnSong":"1."},
+  "Refrén":{"Songbook":"R:", "OnSong":"R:"},
+  "Medzihra":{"Songbook":"I: (interlude)", "OnSong":"Medzihra:"},
+  "Bridge":{"Songbook":"B:", "OnSong":"B:"},
+  "Opakovanie - začiatok":{"Songbook":"|:", "OnSong":"//:"},
+  "Opakovanie - koniec":{"Songbook":":|", "OnSong":"://"},
+  "Dohra":{"Songbook":"O: (outro)", "OnSong":"Dohra:"}
 }
