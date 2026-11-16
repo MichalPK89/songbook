@@ -132,7 +132,7 @@
 
   "test": {
     "title": "Testovanie",
-    "performer": "",
+    "performer": "test",
     "music": "",
     "lyrics": "",
     "genre": "",
