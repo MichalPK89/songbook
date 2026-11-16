@@ -33,6 +33,51 @@ self.addEventListener("fetch", event => {
     
     const url = new URL(event.request.url);
 
+ // INDEX.HTML - network first, cache fallback
+    if (url.pathname.endsWith("/index.html")) {
+
+        event.respondWith(
+            fetch(event.request)
+                .then(async response => {
+
+                    if (response.ok) {
+
+                        console.log("INDEX FROM NETWORK");
+
+                        // Update the cached index.html
+                        const book = url.pathname.includes("/moderne/")
+                            ? "moderne"
+                            : "krestanske";
+
+                        const cache = await caches.open(`songbook-${book}-v1`);
+
+                        await cache.put(event.request, response.clone());
+                    }
+
+                    return response;
+
+                })
+                .catch(async error => {
+
+                    console.log("INDEX NETWORK FAILED - USING CACHE");
+
+                    const response = await caches.match(event.request);
+
+                    if (response) {
+                        return response;
+                    }
+
+                    throw error;
+
+                })
+        );
+
+        return;
+    }
+
+
+
+    
     // navigácia na songs.html?id=...
     if (url.pathname.endsWith("/songs.html")) {
 
