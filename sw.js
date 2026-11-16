@@ -32,7 +32,7 @@ self.addEventListener("fetch", event => {
     );
     
     const url = new URL(event.request.url);
-
+/*
  // INDEX.HTML - network first, cache fallback
     if (url.pathname.endsWith("/index.html")) {
 
@@ -75,7 +75,7 @@ self.addEventListener("fetch", event => {
         return;
     }
 
-
+*/
 
     
     // navigácia na songs.html?id=...
