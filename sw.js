@@ -140,7 +140,8 @@ self.addEventListener("message", async event => {
             "css/style.css",
             "css/index.css",
             "js/index.js",
-            "js/songbook.js"
+            "js/songbook.js",
+            "spevniky.html"
         ];
 
         for (const song in songs) {
